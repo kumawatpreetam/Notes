@@ -360,6 +360,21 @@ graph TD
 
 > 💡 Tip: Use **responsive margin classes** like `mt-md-4` to adjust spacing on different screen sizes.
 
+## 📌 Bootstrap Margin Scale
+
+| Class Value | rem   | px   | Description  |
+|-------------|-------|------|--------------|
+| `0`         | 0     | 0px  | No padding   |
+| `1`         | 0.25  | 4px  | Extra small  |
+| `2`         | 0.5   | 8px  | Small        |
+| `3`         | 1     | 16px | Medium       |
+| `4`         | 1.5   | 24px | Large        |
+| `5`         | 3     | 48px | Extra large  |
+| `auto`      | —     | —    | Automatic    |
+
+ 
+
+
 ## ⚡ Example Code
 ```html
 <div class="m-3 p-2 bg-primary text-white">
