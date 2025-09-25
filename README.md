@@ -4,8 +4,6 @@
 
 **Bootstrap** is a free, open-source **front-end framework** used to create **responsive and mobile-first websites** easily. It provides **pre-designed CSS and JavaScript components** that help developers build modern web pages quickly without writing all styles from scratch.
 
----
-
 ## 🔹 Key Features
 - ✅ **Responsive Grid System**: Easily create layouts that adapt to any screen size.
 - ✅ **Pre-built Components**: Buttons, navbars, cards, modals, forms, and more.
@@ -13,15 +11,11 @@
 - ✅ **Cross-browser Compatible**: Works well on Chrome, Firefox, Edge, Safari.
 - ✅ **Easy Integration**: Can be added via CDN or downloaded locally.
 
----
-
 ## 🛠️ Why Use Bootstrap 5?
 - Speeds up development time ⚡  
 - Ensures a **consistent design** across pages  
 - Provides **ready-to-use UI components**  
 - Supports **mobile-first design**  
-
----
 
 ## ⚡ Example Code
 ```html
@@ -41,11 +35,10 @@
 </body>
 </html>
 ```
+
 # ⚙️ How to Install Bootstrap 5
 
 Bootstrap can be installed in **four main ways** depending on your project setup: **CDN, npm, Local Download, or Yarn**. Each method has its use cases.
-
----
 
 ## 🔹 1. Using CDN (Fast & Easy)
 - Add Bootstrap **CSS and JS links** directly in your HTML.
@@ -70,18 +63,15 @@ Bootstrap can be installed in **four main ways** depending on your project setup
 </body>
 </html>
 ```
+
 # 📐 Bootstrap 5 Breakpoints
 
 In **Bootstrap 5**, **breakpoints** are used to create **responsive layouts**. They define **screen widths** at which the layout or components adjust to different devices like mobile, tablet, and desktop. Bootstrap 5 follows a **mobile-first approach**, meaning styles for smaller screens are applied first, and larger screens use specific breakpoints.
-
----
 
 ## 🔹 What Are Breakpoints?
 - Breakpoints determine **when content changes layout** based on screen size.
 - They help build **mobile-friendly and responsive designs**.
 - Classes like `.col-md-6`, `.d-lg-none` are used to apply styles **only at specific breakpoints**.
-
----
 
 ## 📝 List of Bootstrap 5 Breakpoints
 
@@ -93,8 +83,6 @@ In **Bootstrap 5**, **breakpoints** are used to create **responsive layouts**. T
 | Large          | `lg`         | ≥992            | Laptops / desktops      |
 | Extra Large    | `xl`         | ≥1200           | Desktops                |
 | Extra Extra Large | `xxl`     | ≥1400           | Large desktops          |
-
----
 
 ## ⚡ Example: Responsive Columns
 ```html
@@ -109,11 +97,10 @@ In **Bootstrap 5**, **breakpoints** are used to create **responsive layouts**. T
   </div>
 </div>
 ```
+
 # 🏗️ Bootstrap Container Layout
 
 In **Bootstrap**, a **container layout** is used to **wrap website content** and **align it properly** within the page. Containers provide **responsive padding** and **center the content** based on the screen size. They are the **foundation of Bootstrap's grid system**.
-
----
 
 ## 🔹 Types of Containers in Bootstrap 5
 
@@ -122,8 +109,6 @@ In **Bootstrap**, a **container layout** is used to **wrap website content** and
 | **Fixed Container** | Width changes at **breakpoints**; centers content on large screens         | `.container`         |
 | **Fluid Container** | Always takes **100% width** of the viewport                                 | `.container-fluid`   |
 | **Responsive Container** | Width changes at specific **breakpoints**, combining fixed & fluid features | `.container-sm`, `.container-md`, `.container-lg`, `.container-xl`, `.container-xxl` |
-
----
 
 ## ⚡ Example: Container Layout
 ```html
@@ -137,6 +122,7 @@ In **Bootstrap**, a **container layout** is used to **wrap website content** and
   <p>This container always spans the full width of the viewport.</p>
 </div>
 ```
+
 # 📐 Bootstrap 5 Container Widths
 
 | Breakpoint     | Extra Small <576px | Small ≥576px | Medium ≥768px | Large ≥992px | X-Large ≥1200px | XX-Large ≥1400px |
@@ -155,16 +141,12 @@ In **Bootstrap**, a **container layout** is used to **wrap website content** and
 
 The **Bootstrap Grid System** is a **flexbox-based layout system** that helps developers design **responsive and structured web pages**. It divides the page into **rows and columns** to organize content in a clean and flexible way.
 
----
-
 ## 🔹 Key Points
 - ✅ **12-column system**: The screen is divided into 12 equal parts.  
 - ✅ **Responsive**: Automatically adjusts for mobiles, tablets, and desktops.  
 - ✅ **Containers → Rows → Columns** structure.  
 - ✅ **Breakpoints** allow layouts to adapt across devices.  
 - ✅ Works with **flexbox utilities** for alignment and spacing.  
-
----
 
 ## 🖼️ Grid Structure Diagram
 
@@ -180,21 +162,18 @@ graph TD
     classDef green fill:#6BB74B,stroke:#fff,stroke-width:2px,color:#fff;
     classDef purple fill:#8A2BE2,stroke:#fff,stroke-width:2px,color:#fff;
 ```
+
 # ↔️ What is Bootstrap Offset?
 
 ![Bootstrap Offset Badge](https://img.shields.io/badge/Bootstrap-Offset_System-orange?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 The **Bootstrap Offset** is a feature in the **Grid system** that allows you to **add extra spacing (margin-left)** before a column. It helps in **pushing columns to the right** without leaving empty `<div>` elements, keeping the layout clean and flexible.
 
----
-
 ## 🔹 Key Points
 - ✅ Used with the **`.offset-*` classes**.  
 - ✅ Works with **12-column grid** system.  
 - ✅ Offsets are **responsive**, meaning you can apply them per breakpoint.  
 - ✅ Helps in **centering or aligning** content inside rows.  
-
----
 
 ## ⚡ Example Code
 ```html
@@ -206,8 +185,8 @@ The **Bootstrap Offset** is a feature in the **Grid system** that allows you to 
     </div>
   </div>
 </div>
-
 ```
+
 # 🔄 What is Reordering in Bootstrap?
 
 ![Bootstrap Reordering Badge](https://img.shields.io/badge/Bootstrap-Reordering_System-green?style=for-the-badge&logo=bootstrap&logoColor=white)
@@ -215,15 +194,11 @@ The **Bootstrap Offset** is a feature in the **Grid system** that allows you to 
 **Reordering** in Bootstrap refers to changing the **visual order of columns** inside the grid system **without changing the HTML structure**.  
 This is done using the **`order-*` classes**, which are based on **Flexbox ordering**. It’s useful for making content appear in different positions on different screen sizes.
 
----
-
 ## 🔹 Key Points
 - ✅ Uses **Flexbox `order` property**.  
 - ✅ Helps adjust column order for **responsive layouts**.  
 - ✅ Classes available: `.order-0` to `.order-5` and `.order-first`, `.order-last`.  
 - ✅ You can combine **breakpoints** (e.g., `.order-md-2`).  
-
----
 
 ## ⚡ Example Code
 ```html
@@ -235,9 +210,6 @@ This is done using the **`order-*` classes**, which are based on **Flexbox order
   </div>
 </div>
 ```
-
----
-
 
 ## 🖼️  Reordering Diagram 
 
@@ -257,7 +229,6 @@ graph LR
     classDef orange fill:#FFA500,stroke:#fff,stroke-width:2px,color:#fff;
     classDef red fill:#E63946,stroke:#fff,stroke-width:2px,color:#fff;
 ```
----
 
 ## 🔹 Table of Grid Classes 
 
@@ -281,8 +252,6 @@ graph LR
 | `.align-items-*` | Vertical alignment of columns | `<div class="row align-items-center">...</div>` |
 | `.justify-content-*` | Horizontal alignment of columns | `<div class="row justify-content-between">...</div>` |
 
----
-
 # 🏗️ What is Nesting in Bootstrap?
 
 ![Bootstrap Nesting Badge](https://img.shields.io/badge/Bootstrap-Nesting_System-purple?style=for-the-badge&logo=bootstrap&logoColor=white)
@@ -290,15 +259,11 @@ graph LR
 **Nesting** in Bootstrap refers to placing a **new row and columns inside an existing column**.  
 This allows developers to create **complex layouts** by dividing a column into smaller sub-columns while maintaining responsiveness.
 
----
-
 ## 🔹 Key Points
 - ✅ **Nesting = Column inside a Column**.  
 - ✅ Use a `.row` inside a `.col-*`.  
 - ✅ Keeps the **grid alignment** consistent.  
 - ✅ Helpful for **multi-level layouts** (e.g., sidebars, cards, sub-sections).  
-
----
 
 ## ⚡ Example Code
 ```html
@@ -337,6 +302,7 @@ graph TD
     classDef teal fill:#20C997,stroke:#fff,stroke-width:2px,color:#fff,rx:10,ry:10;
 
 ```
+
 # 📏 Margin in Bootstrap
 
 ![Margin Badge](https://img.shields.io/badge/CSS-Margin-blue)
@@ -372,9 +338,6 @@ graph TD
 | `5`         | 3     | 48px | Extra large  |
 | `auto`      | —     | —    | Automatic    |
 
- 
-
-
 ## ⚡ Example Code
 ```html
 <div class="m-3 p-2 bg-primary text-white">
@@ -385,9 +348,9 @@ graph TD
 
 ```mermaid
 flowchart TB
-    style A fill:#f8f9fa,stroke:#000,stroke-width:1px
-    style B fill:#d1e7dd,stroke:#000,stroke-width:1px
-    style C fill:#ffe5d9,stroke:#000,stroke-width:1px
+    style A fill:#6D6F73,stroke:#000,stroke-width:1px
+    style B fill:#2F2440,stroke:#000,stroke-width:1px
+    style C fill:#BA0F30,stroke:#000,stroke-width:1px
 
     A[Parent Container]
     B[Margin Area]
@@ -424,11 +387,12 @@ flowchart TB
   This box uses negative top margin
 </div>
 ```
+
 ```mermaid
 flowchart TB
-    style A fill:#f8f9fa,stroke:#000,stroke-width:1px
-    style B fill:#f5c6cb,stroke:#000,stroke-width:1px
-    style C fill:#cce5ff,stroke:#000,stroke-width:1px
+    style A fill:#2F5233,stroke:#000,stroke-width:1px
+    style B fill:#08313A,stroke:#000,stroke-width:1px
+    style C fill:##2C5E1A,stroke:#000,stroke-width:1px
 
     A[Parent Container]
     B[Negative Margin Area]
@@ -436,3 +400,162 @@ flowchart TB
 
     A --> B --> C
 ```
+
+# 🧩 What is Padding in Bootstrap?
+
+![Padding Badge](https://img.shields.io/badge/CSS-Padding-green?style=for-the-badge&logo=css3&logoColor=white)
+
+**Padding** is the space **inside an element**, between the **content** and the **border**.  
+In Bootstrap, padding is controlled using **utility classes**.
+
+## 🔹 Key Points
+- ✅ Adds **space inside** an element.  
+- ✅ Pushes the **content away from the border**.  
+- ✅ Can be applied on **all sides** or **specific sides**.  
+- ✅ Helps improve **readability and design balance**.  
+
+## 📘 Padding Classes in Bootstrap
+
+| Class | Effect | Example |
+|-------|--------|---------|
+| `p-0` | No padding | `<div class="p-0">Box</div>` |
+| `p-1` to `p-5` | Small to large padding | `<div class="p-3">Box</div>` |
+| `pt-*` | Top padding | `<div class="pt-2">Box</div>` |
+| `pb-*` | Bottom padding | `<div class="pb-4">Box</div>` |
+| `ps-*` | Start (left) padding | `<div class="ps-3">Box</div>` |
+| `pe-*` | End (right) padding | `<div class="pe-2">Box</div>` |
+| `px-*` | Horizontal padding (left & right) | `<div class="px-4">Box</div>` |
+| `py-*` | Vertical padding (top & bottom) | `<div class="py-5">Box</div>` |
+
+## 📌 Bootstrap Padding Scale
+
+| Class Value | rem   | px   | Description  |
+|-------------|-------|------|--------------|
+| `0`         | 0     | 0px  | No padding   |
+| `1`         | 0.25  | 4px  | Extra small  |
+| `2`         | 0.5   | 8px  | Small        |
+| `3`         | 1     | 16px | Medium       |
+| `4`         | 1.5   | 24px | Large        |
+| `5`         | 3     | 48px | Extra large  |
+| `auto`      | —     | —    | Automatic    |
+
+## ⚡ Example Code
+```html
+<div class="bg-primary text-white p-4">
+  This box has padding inside
+</div>
+```
+
+```mermaid
+flowchart TB
+    style A fill:#81B622,stroke:#000,stroke-width:1px
+    style B fill:#DBA40E,stroke:#000,stroke-width:1px
+    style C fill:##7E6E13,stroke:#000,stroke-width:1px
+
+    A[Element Border]
+    B[Padding Area]
+    C[Content]
+
+    A --> B --> C
+```
+
+# ↔️ What are Horizontal Classes in Bootstrap?
+
+![Bootstrap Badge](https://img.shields.io/badge/Framework-Bootstrap-blue)  
+![Layout Badge](https://img.shields.io/badge/Layout-Horizontal-orange)  
+![Responsive Badge](https://img.shields.io/badge/Responsive-Yes-success)
+
+In **Bootstrap**, **horizontal classes** are utility classes used to align, space, and position elements **horizontally** across the page. These classes help in **alignment of text, flex items, and spacing between elements** without writing custom CSS.
+
+## 🔹 Key Horizontal Classes
+- ✅ **Text Alignment**  
+  - `text-start` → Align text to the left  
+  - `text-center` → Center align text  
+  - `text-end` → Align text to the right  
+
+- ✅ **Flexbox Alignment**  
+  - `d-flex justify-content-start` → Align items to the left  
+  - `d-flex justify-content-center` → Center items horizontally  
+  - `d-flex justify-content-end` → Align items to the right  
+  - `d-flex justify-content-between` → Spread items evenly  
+  - `d-flex justify-content-around` → Equal space around items  
+  - `d-flex justify-content-evenly` → Equal space between items  
+
+## 🧑‍💻 Code Example
+
+```html
+<div class="container text-center">
+  <h3 class="text-center">Horizontal Classes Example</h3>
+  
+  <div class="d-flex justify-content-between bg-light p-3">
+    <div class="p-2 bg-primary text-white">Box 1</div>
+    <div class="p-2 bg-success text-white">Box 2</div>
+    <div class="p-2 bg-danger text-white">Box 3</div>
+  </div>
+</div>
+```
+
+```mermaid
+graph LR;
+    A[Start]:::blue --> B[Text Classes]:::green
+    A --> C[Flexbox Classes]:::orange
+    B --> D["text-start<br>text-center<br>text-end"]:::purple
+    C --> E["justify-content-start<br>justify-content-center<br>justify-content-end"]:::red
+    C --> F["justify-content-between<br>justify-content-around<br>justify-content-evenly"]:::red
+
+classDef blue fill:#3498db,color:#fff,stroke:#2c3e50;
+classDef green fill:#2ecc71,color:#fff,stroke:#27ae60;
+classDef orange fill:#e67e22,color:#fff,stroke:#d35400;
+classDef purple fill:#9b59b6,color:#fff,stroke:#8e44ad;
+classDef red fill:#e74c3c,color:#fff,stroke:#c0392b;
+```
+
+# ⬆️ What is Vertical Alignment in Bootstrap?
+
+![Bootstrap Badge](https://img.shields.io/badge/Framework-Bootstrap-blue)  
+![Flexbox Badge](https://img.shields.io/badge/Feature-Vertical_Alignment-orange)  
+![Responsive Badge](https://img.shields.io/badge/Responsive-Yes-success)
+
+In **Bootstrap**, **vertical alignment** is used to position elements **up, center, or down** within a container. It is commonly applied to **flex items, text, images, tables, and navbars** to make layouts **clean and responsive**.
+
+## 🔹 Key Classes for Vertical Alignment
+
+### 1. Text Alignment (Vertical)
+- `align-baseline` → Aligns text to the baseline  
+- `align-top` → Aligns text to the top  
+- `align-middle` → Aligns text to the middle  
+- `align-bottom` → Aligns text to the bottom  
+
+### 2. Flexbox Alignment (Vertical)
+- `align-items-start` → Align flex items at top  
+- `align-items-center` → Center flex items vertically  
+- `align-items-end` → Align flex items at bottom  
+- `align-items-baseline` → Align items by baseline  
+- `align-items-stretch` → Stretch items to fill container  
+
+## 🧑‍💻 Code Examples
+
+### ✅ Flexbox Example
+```html
+<!-- Copy Code 👇 -->
+<div class="d-flex align-items-center" style="height:200px; background:#f8f9fa;">
+  <div class="p-2 bg-primary text-white">Box 1</div>
+  <div class="p-2 bg-success text-white">Box 2</div>
+</div>
+```
+
+```mermaid
+graph TD;
+    A[Vertical Alignment]:::blue --> B[Text Classes]:::green
+    A --> C[Flexbox Classes]:::orange
+    B --> D[align-top / align-middle / align-bottom / align-baseline]:::purple
+    C --> E[align-items-start / center / end / baseline / stretch]:::red
+
+classDef blue fill:#3498db,color:#fff,stroke:#2c3e50;
+classDef green fill:#2ecc71,color:#fff,stroke:#27ae60;
+classDef orange fill:#e67e22,color:#fff,stroke:#d35400;
+classDef purple fill:#9b59b6,color:#fff,stroke:#8e44ad;
+classDef red fill:#e74c3c,color:#fff,stroke:#c0392b;
+```
+
+
