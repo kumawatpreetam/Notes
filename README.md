@@ -542,7 +542,6 @@ In **Bootstrap**, **vertical alignment** is used to position elements **up, cent
   <div class="p-2 bg-primary text-white">Box 1</div>
   <div class="p-2 bg-success text-white">Box 2</div>
 </div>
-```
 
 ```mermaid
 graph TD;
@@ -557,5 +556,108 @@ classDef orange fill:#e67e22,color:#fff,stroke:#d35400;
 classDef purple fill:#9b59b6,color:#fff,stroke:#8e44ad;
 classDef red fill:#e74c3c,color:#fff,stroke:#c0392b;
 ```
+# 🎯 Alignment Content Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![CSS Badge](https://img.shields.io/badge/Type-CSS-yellow)
+
+**Alignment content classes** in Bootstrap are used to **align flex container content along the cross axis**. They help position **rows or columns inside a flex container** vertically or horizontally based on container height.
+
+## 🔹 Key Classes
+
+| Class                  | Description                                |
+|------------------------|--------------------------------------------|
+| `.align-content-start` | Aligns content to the **start** of container |
+| `.align-content-center`| Aligns content to the **center**           |
+| `.align-content-end`   | Aligns content to the **end**              |
+| `.align-content-between` | Places content **with space between**     |
+| `.align-content-around`  | Places content **with space around**      |
+| `.align-content-stretch` | Stretches content to **fill container**   |
+
+## ⚡ Syntax Example
+
+```html
+<div class="d-flex flex-wrap align-content-center" style="height:200px;">
+  <div class="p-2 bg-primary text-white">Item 1</div>
+  <div class="p-2 bg-success text-white">Item 2</div>
+  <div class="p-2 bg-danger text-white">Item 3</div>
+</div>
+```
+
+> 💡 Tip: These classes work **only on flex containers with multiple lines** (`flex-wrap`), and affect **overall content alignment**, not individual items.
+
+## 🌐 Align Content Diagram Example
+
+```mermaid
+graph TD;
+    A[Flex Container] --> B[align-content-start]
+    A --> C[align-content-center]
+    A --> D[align-content-end]
+    A --> E[align-content-between]
+    A --> F[align-content-around]
+    A --> G[align-content-stretch]
+```
+
+# 🙋 Align Self Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![Flexbox Badge](https://img.shields.io/badge/Type-Flexbox-orange)
+
+The **`align-self` classes** in Bootstrap allow you to **align individual flex items** inside a flex container. Unlike `align-content` (which controls multiple items together), `align-self` works **per item**, giving you more control.
+
+---
+
+## 🔹 Available Classes
+
+| Class              | Description                                   |
+|--------------------|-----------------------------------------------|
+| `.align-self-start`   | Aligns the item to the **start** of the container |
+| `.align-self-center`  | Aligns the item to the **center**            |
+| `.align-self-end`     | Aligns the item to the **end**               |
+| `.align-self-baseline`| Aligns the item based on **text baseline**   |
+| `.align-self-stretch` | **Stretches** the item to fill the container |
+
+---
+
+## ⚡ Responsive Variants
+
+You can also use these with **breakpoints**:
+
+```
+align-self-{breakpoint}-{value}
+```
+
+Example breakpoints: `sm`, `md`, `lg`, `xl`, `xxl`
+
+👉 Example: `align-self-md-center`, `align-self-lg-end`
+
+---
+
+## 📝 Example Code
+
+```html
+<div class="d-flex" style="height:150px;">
+  <div class="p-2 bg-primary text-white align-self-start">Start</div>
+  <div class="p-2 bg-success text-white align-self-center">Center</div>
+  <div class="p-2 bg-danger text-white align-self-end">End</div>
+  <div class="p-2 bg-warning text-dark align-self-stretch">Stretch</div>
+</div>
+```
+
+---
+
+## 🌐 Align Self Diagram (Behavior)
+
+```mermaid
+graph TD;
+    A[Flex Container] --> B[align-self-start]
+    A --> C[align-self-center]
+    A --> D[align-self-end]
+    A --> E[align-self-baseline]
+    A --> F[align-self-stretch]
+```
+
+---
+
+> 💡 **Tip:** Use `align-self` when you want **one item** aligned differently from others inside the same flex container.
+
 
 
