@@ -1632,3 +1632,389 @@ graph TD
 
 > 💡 **Tip:** Use `position-relative` on the parent when you want an absolutely positioned child to be aligned within it.
 
+# 🌐 Overflow in Bootstrap  
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![CSS Badge](https://img.shields.io/badge/Type-Overflow-green)
+
+The **overflow utility** in Bootstrap is used to control how content is handled when it **overflows its container**.  
+It is based on the **CSS `overflow` property**.
+
+---
+
+## 🔹 Classes of Overflow  
+
+| Class              | Description |
+|--------------------|-------------|
+| `.overflow-auto`   | Adds scrollbars only when content overflows. |
+| `.overflow-hidden` | Hides extra content that goes outside the container. |
+| `.overflow-visible`| Default behavior; extra content is visible outside the container. |
+| `.overflow-scroll` | Always adds scrollbars, regardless of content size. |
+
+---
+
+## 🔹 Breakpoints  
+
+Bootstrap also supports **responsive variations** for overflow:  
+
+- `.overflow-sm-auto`, `.overflow-md-auto`, `.overflow-lg-auto`, `.overflow-xl-auto`, `.overflow-xxl-auto`  
+- Same for `.overflow-hidden`, `.overflow-visible`, `.overflow-scroll`.  
+
+---
+
+## ⚡ Example Code  
+
+```html
+<div class="overflow-auto bg-light" style="height: 100px; width: 200px;">
+  <p>
+    This is a long text that will make the container scrollable when content overflows.
+    Bootstrap overflow utilities help in managing this behavior.
+  </p>
+</div>
+```
+
+---
+
+## 📊 Mermaid Diagram  
+
+```mermaid
+graph TD
+    A[Overflow Classes] --> B[overflow-auto]
+    A --> C[overflow-hidden]
+    A --> D[overflow-visible]
+    A --> E[overflow-scroll]
+```
+
+---
+
+> 💡 **Tip:** Use `.overflow-auto` for dynamic layouts where scrollbars should appear only when needed.
+
+# 🎨 Background Classes in Bootstrap  
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![CSS Badge](https://img.shields.io/badge/Type-Background-green)
+
+Bootstrap provides **background utility classes** that help you quickly set the **background color** or **gradient** of elements using predefined styles.  
+
+---
+
+## 🔹 Types of Background Classes  
+
+| Class | Description |
+|-------|-------------|
+| `.bg-primary`   | Applies the primary theme color background. |
+| `.bg-secondary` | Applies the secondary theme color background. |
+| `.bg-success`   | Green background, often used for success messages. |
+| `.bg-danger`    | Red background, used for errors or warnings. |
+| `.bg-warning`   | Yellow background, used for caution or alerts. |
+| `.bg-info`      | Light blue background, for information messages. |
+| `.bg-light`     | Light gray background. |
+| `.bg-dark`      | Dark background (black/gray). |
+| `.bg-white`     | Pure white background. |
+| `.bg-transparent` | Transparent background. |
+
+---
+
+## 🔹 Gradient Backgrounds  
+
+You can add gradients with the `.bg-gradient` class:  
+
+```html
+<div class="bg-primary bg-gradient text-white p-3">
+  Gradient Background Example
+</div>
+```
+
+---
+
+## ⚡ Example Code  
+
+```html
+<div class="bg-success text-white p-3">Success Background</div>
+<div class="bg-danger text-white p-3">Danger Background</div>
+<div class="bg-warning text-dark p-3">Warning Background</div>
+```
+
+---
+
+## 📊 Mermaid Diagram  
+
+```mermaid
+graph TD
+    A[Background Classes] --> B[.bg-primary]
+    A --> C[.bg-secondary]
+    A --> D[.bg-success]
+    A --> E[.bg-danger]
+    A --> F[.bg-warning]
+    A --> G[.bg-info]
+    A --> H[.bg-light]
+    A --> I[.bg-dark]
+    A --> J[.bg-white]
+    A --> K[.bg-transparent]
+```
+
+---
+
+> 💡 **Tip:** Use text color utilities like `.text-white` or `.text-dark` with background classes for better readability.
+
+# 🌈 Background Gradient Classes in Bootstrap  
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![CSS Badge](https://img.shields.io/badge/Type-Gradient-purple)
+
+Bootstrap provides **gradient utilities** that apply a smooth gradient effect to any **background color class**.  
+The gradients are added using the `.bg-gradient` class in combination with color utilities.
+
+---
+
+## 🔹 Syntax  
+
+```html
+<div class="bg-primary bg-gradient text-white p-3">
+  Primary Gradient Background
+</div>
+```
+
+---
+
+## 🔹 Available Gradient Classes  
+
+| Class Example | Description |
+|---------------|-------------|
+| `.bg-primary.bg-gradient`   | Gradient with primary color |
+| `.bg-secondary.bg-gradient` | Gradient with secondary color |
+| `.bg-success.bg-gradient`   | Gradient with success color |
+| `.bg-danger.bg-gradient`    | Gradient with danger color |
+| `.bg-warning.bg-gradient`   | Gradient with warning color |
+| `.bg-info.bg-gradient`      | Gradient with info color |
+| `.bg-light.bg-gradient`     | Gradient with light color |
+| `.bg-dark.bg-gradient`      | Gradient with dark color |
+
+---
+
+## ⚡ Example Code  
+
+```html
+<div class="bg-success bg-gradient text-white p-3 mb-2">Success Gradient</div>
+<div class="bg-danger bg-gradient text-white p-3 mb-2">Danger Gradient</div>
+<div class="bg-warning bg-gradient text-dark p-3 mb-2">Warning Gradient</div>
+<div class="bg-info bg-gradient text-white p-3 mb-2">Info Gradient</div>
+```
+
+---
+
+## 📊 Mermaid Diagram  
+
+```mermaid
+graph TD
+    A[.bg-gradient] --> B[.bg-primary.bg-gradient]
+    A --> C[.bg-secondary.bg-gradient]
+    A --> D[.bg-success.bg-gradient]
+    A --> E[.bg-danger.bg-gradient]
+    A --> F[.bg-warning.bg-gradient]
+    A --> G[.bg-info.bg-gradient]
+    A --> H[.bg-light.bg-gradient]
+    A --> I[.bg-dark.bg-gradient]
+```
+
+---
+
+> 💡 **Tip:** Always combine `.bg-gradient` with a background color class. The gradient flows **top-to-bottom** by default.
+
+# 🎨 Color Utility Classes in Bootstrap  
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![CSS Badge](https://img.shields.io/badge/Type-Colors-red)
+
+Bootstrap provides **text color utilities** to quickly set the **foreground (text) color** of elements.  
+These classes make it easy to apply theme-based or contextual colors.
+
+---
+
+## 🔹 Standard Text Color Classes  
+
+| Class             | Description |
+|-------------------|-------------|
+| `.text-primary`   | Applies the primary theme color to text. |
+| `.text-secondary` | Applies the secondary theme color. |
+| `.text-success`   | Green text for success messages. |
+| `.text-danger`    | Red text for error or danger. |
+| `.text-warning`   | Yellow text for warnings. |
+| `.text-info`      | Light blue text for informational content. |
+| `.text-light`     | Light gray text (use on dark backgrounds). |
+| `.text-dark`      | Dark gray/black text. |
+| `.text-body`      | Default body text color. |
+| `.text-muted`     | Muted (less visible) text. |
+| `.text-white`     | Pure white text. |
+| `.text-black-50`  | Black text with 50% opacity. |
+| `.text-white-50`  | White text with 50% opacity. |
+
+---
+
+## 🔹 Background & Link Integration  
+
+- Combine with **background classes** for readability:  
+  ```html
+  <div class="bg-dark p-3">
+    <p class="text-light">Light text on dark background</p>
+  </div>
+  ```
+- Links also adapt to text color utilities using `.link-*` classes.  
+
+Example:  
+```html
+<a href="#" class="link-primary">Primary Link</a>
+<a href="#" class="link-danger">Danger Link</a>
+```
+
+---
+
+## ⚡ Example Code  
+
+```html
+<p class="text-primary">Primary Color Text</p>
+<p class="text-success">Success Color Text</p>
+<p class="text-danger">Danger Color Text</p>
+<p class="text-warning">Warning Color Text</p>
+<p class="text-info">Info Color Text</p>
+<p class="text-muted">Muted Color Text</p>
+```
+
+---
+
+## 📊 Mermaid Diagram  
+
+```mermaid
+graph TD
+    A[Text Color Classes] --> B[.text-primary]
+    A --> C[.text-secondary]
+    A --> D[.text-success]
+    A --> E[.text-danger]
+    A --> F[.text-warning]
+    A --> G[.text-info]
+    A --> H[.text-light]
+    A --> I[.text-dark]
+    A --> J[.text-body]
+    A --> K[.text-muted]
+    A --> L[.text-white]
+    A --> M[.text-black-50]
+    A --> N[.text-white-50]
+```
+
+---
+
+> 💡 **Tip:** Always ensure enough **contrast between text and background** for accessibility.
+
+# 🌈 Color Opacity Classes in Bootstrap  
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![CSS Badge](https://img.shields.io/badge/Type-ColorOpacity-orange)
+
+Bootstrap provides **color opacity utilities** that let you control the **transparency** of text colors.  
+These classes are based on **CSS variables** and can be applied to any text color utility (`.text-*`).
+
+---
+
+## 🔹 Syntax  
+
+```html
+.text-{color}-opacity-{value}
+```
+
+- `{color}` → primary, secondary, success, danger, warning, info, dark, light, white, black  
+- `{value}` → 25, 50, 75, 100 (percentage of visibility)  
+
+---
+
+## 🔹 Available Classes  
+
+| Class Example                  | Description |
+|--------------------------------|-------------|
+| `.text-primary-opacity-25`     | Primary text with 25% opacity |
+| `.text-primary-opacity-50`     | Primary text with 50% opacity |
+| `.text-primary-opacity-75`     | Primary text with 75% opacity |
+| `.text-primary-opacity-100`    | Primary text with full (100%) opacity |
+| `.text-danger-opacity-50`      | Danger text with 50% opacity |
+| `.text-success-opacity-75`     | Success text with 75% opacity |
+| `.text-dark-opacity-25`        | Dark text with 25% opacity |
+| `.text-white-opacity-50`       | White text with 50% opacity |
+
+---
+
+## ⚡ Example Code  
+
+```html
+<p class="text-primary-opacity-25">Primary 25% Opacity</p>
+<p class="text-primary-opacity-50">Primary 50% Opacity</p>
+<p class="text-primary-opacity-75">Primary 75% Opacity</p>
+<p class="text-primary-opacity-100">Primary 100% Opacity</p>
+```
+
+---
+
+## 📊 Mermaid Diagram  
+
+```mermaid
+graph TD
+    A[Color Opacity Classes] --> B[.text-*-opacity-25]
+    A --> C[.text-*-opacity-50]
+    A --> D[.text-*-opacity-75]
+    A --> E[.text-*-opacity-100]
+```
+
+---
+
+> 💡 **Tip:** Combine **opacity classes** with background utilities for better contrast and accessibility.
+
+# 🎨 Background Opacity Classes in Bootstrap  
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![CSS Badge](https://img.shields.io/badge/Type-BackgroundOpacity-purple)
+
+Bootstrap provides **background opacity utilities** that let you control the **transparency of background colors**.  
+These classes are useful when you want a semi-transparent background while keeping text fully visible.
+
+---
+
+## 🔹 Syntax  
+
+```html
+.bg-opacity-{value}
+```
+
+- `{value}` → `10`, `25`, `50`, `75`, `100`  
+- Works with any background color like `.bg-primary`, `.bg-success`, `.bg-danger`, etc.
+
+---
+
+## 🔹 Available Classes  
+
+| Class Example        | Description |
+|----------------------|-------------|
+| `.bg-opacity-10`     | Background color with 10% opacity |
+| `.bg-opacity-25`     | Background color with 25% opacity |
+| `.bg-opacity-50`     | Background color with 50% opacity |
+| `.bg-opacity-75`     | Background color with 75% opacity |
+| `.bg-opacity-100`    | Background color with 100% (solid) |
+
+---
+
+## ⚡ Example Code  
+
+```html
+<div class="bg-primary bg-opacity-25 text-dark p-3">Primary 25% Background</div>
+<div class="bg-success bg-opacity-50 text-white p-3">Success 50% Background</div>
+<div class="bg-danger bg-opacity-75 text-white p-3">Danger 75% Background</div>
+<div class="bg-warning bg-opacity-100 text-dark p-3">Warning 100% Background</div>
+```
+
+---
+
+## 📊 Mermaid Diagram  
+
+```mermaid
+graph TD
+    A[Background Opacity] --> B[.bg-opacity-10]
+    A --> C[.bg-opacity-25]
+    A --> D[.bg-opacity-50]
+    A --> E[.bg-opacity-75]
+    A --> F[.bg-opacity-100]
+```
+
+---
+
+> 💡 **Tip:** Use `.bg-opacity-*` with contextual background classes for better design control (e.g., `.bg-primary.bg-opacity-50`).
