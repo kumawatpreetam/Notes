@@ -649,5 +649,769 @@ graph TD;
 
 > 💡 **Tip:** Use `align-self` when you want **one item** aligned differently from others inside the same flex container.
 
+# 🔄 Flex Direction Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-FlexDirectionClasse-purple?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+
+The **`flex-direction` classes** in Bootstrap are used to **set the direction of flex items** inside a flex container. They control how items are placed: **horizontally (row)** or **vertically (column)**, and whether the order is **normal or reversed**.
+
+## 🔹 Available Classes
+
+| Class               | Description                                   |
+|----------------------|-----------------------------------------------|
+| `.flex-row`          | Places items **horizontally (default)**       |
+| `.flex-row-reverse`  | Places items horizontally in **reverse order**|
+| `.flex-column`       | Places items **vertically**                   |
+| `.flex-column-reverse` | Places items vertically in **reverse order** |
+
+## ⚡ Responsive Variants
+
+Bootstrap supports **responsive flex direction classes** with breakpoints:
+
+```
+flex-{breakpoint}-{direction}
+```
+
+✅ Breakpoints: `sm`, `md`, `lg`, `xl`, `xxl`  
+✅ Directions: `row`, `row-reverse`, `column`, `column-reverse`
+
+👉 Examples:
+- `flex-sm-row`
+- `flex-md-column`
+- `flex-lg-row-reverse`
+- `flex-xl-column-reverse`
+
+## 📝 Example Code
+
+```html
+<div class="d-flex flex-row bg-light p-3">
+  <div class="p-2 bg-primary text-white">Item 1</div>
+  <div class="p-2 bg-success text-white">Item 2</div>
+  <div class="p-2 bg-danger text-white">Item 3</div>
+</div>
+
+<div class="d-flex flex-column-reverse bg-light p-3 mt-3">
+  <div class="p-2 bg-warning text-dark">Item A</div>
+  <div class="p-2 bg-info text-white">Item B</div>
+  <div class="p-2 bg-secondary text-white">Item C</div>
+</div>
+```
+
+## 🌐 Mermaid Diagram (Flex Direction)
+
+```mermaid
+graph TD;
+    A[Flex Container] --> B[flex-row → Horizontal]
+    A --> C[flex-row-reverse → Horizontal Reverse]
+    A --> D[flex-column → Vertical]
+    A --> E[flex-column-reverse → Vertical Reverse]
+```
+
+> 💡 **Tip:** Use `flex-direction` classes when you want to **control layout orientation** of flex items in Bootstrap.
+
+
+# 🌀 Flex Wrap & Flex Fill in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-flexWrap/flexFill-purple?style=for-the-badge&logo=bootstrap&logoColor=white)
+
+Bootstrap provides **flex utilities** to control how flex items **wrap** and how they **fill available space** inside a flex container.
+
+## 🔹 Flex Wrap
+
+Flex **wrap classes** define whether flex items should stay in a **single line** or **wrap into multiple lines**.
+
+| Class          | Description |
+|----------------|-------------|
+| `.flex-nowrap` | Default, items stay on **one line** |
+| `.flex-wrap`   | Items **wrap onto multiple lines** if needed |
+| `.flex-wrap-reverse` | Items wrap onto multiple lines in **reverse order** |
+
+✅ Works with **responsive variants**: `flex-{breakpoint}-wrap` or `flex-{breakpoint}-nowrap`.
+
+## ⚡ Example: Flex Wrap
+
+```html
+<div class="d-flex flex-wrap bg-light p-2" style="width:200px;">
+  <div class="p-2 bg-primary text-white">Item 1</div>
+  <div class="p-2 bg-success text-white">Item 2</div>
+  <div class="p-2 bg-danger text-white">Item 3</div>
+  <div class="p-2 bg-warning">Item 4</div>
+</div>
+```
+
+## 🔹 Flex Fill
+
+Flex **fill classes** make flex items **grow to occupy available free space** equally, no matter their content.
+
+| Class       | Description |
+|-------------|-------------|
+| `.flex-fill` | Forces the item to **take equal width** in the container |
+
+✅ Works across **breakpoints**: `flex-{breakpoint}-fill`.
+✅ It work with col only 
+
+## ⚡ Example: Flex Fill
+
+```html
+<div class="d-flex">
+  <div class="p-2 flex-fill bg-primary text-white">Equal Width 1</div>
+  <div class="p-2 flex-fill bg-success text-white">Equal Width 2</div>
+  <div class="p-2 flex-fill bg-danger text-white">Equal Width 3</div>
+</div>
+```
+
+## 🌐 Mermaid Diagram (Flex Wrap & Fill)
+
+```mermaid
+graph TD;
+    A[Flex Container] --> B[flex-nowrap → Single Line]
+    A --> C[flex-wrap → Multiple Lines]
+    A --> D[flex-wrap-reverse → Reverse Wrap]
+    A --> E[flex-fill → Items Grow Equally]
+```
+
+> 💡 **Tip:** Use `flex-wrap` to control **line breaking**, and `flex-fill` to make items **expand and share space equally**.
+
+# 📏 Flex Direction Breakpoints in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![Flexbox Badge](https://img.shields.io/badge/Type-FlexDirection-orange)
+
+Bootstrap provides **responsive flex-direction classes** that let you control the **layout direction of flex items** at different screen sizes.
+
+---
+
+## 🔹 Breakpoint Pattern
+
+```
+flex-{breakpoint}-{direction}
+```
+
+- `{breakpoint}` → `sm`, `md`, `lg`, `xl`, `xxl`
+- `{direction}` → `row`, `row-reverse`, `column`, `column-reverse`
+
+---
+
+## 📝 Complete List of Classes
+
+| Breakpoint | Row | Row Reverse | Column | Column Reverse |
+|------------|-----|-------------|--------|----------------|
+| Extra Small (XS `<576px`) | `flex-row` | `flex-row-reverse` | `flex-column` | `flex-column-reverse` |
+| Small (SM `≥576px`) | `flex-sm-row` | `flex-sm-row-reverse` | `flex-sm-column` | `flex-sm-column-reverse` |
+| Medium (MD `≥768px`) | `flex-md-row` | `flex-md-row-reverse` | `flex-md-column` | `flex-md-column-reverse` |
+| Large (LG `≥992px`) | `flex-lg-row` | `flex-lg-row-reverse` | `flex-lg-column` | `flex-lg-column-reverse` |
+| Extra Large (XL `≥1200px`) | `flex-xl-row` | `flex-xl-row-reverse` | `flex-xl-column` | `flex-xl-column-reverse` |
+| Extra Extra Large (XXL `≥1400px`) | `flex-xxl-row` | `flex-xxl-row-reverse` | `flex-xxl-column` | `flex-xxl-column-reverse` |
+
+---
+
+## ⚡ Example Code
+
+```html
+<div class="d-flex flex-sm-row flex-md-column flex-lg-row-reverse bg-light p-3">
+  <div class="p-2 bg-primary text-white">Item 1</div>
+  <div class="p-2 bg-success text-white">Item 2</div>
+  <div class="p-2 bg-danger text-white">Item 3</div>
+</div>
+```
+
+---
+
+## 🌐 Mermaid Diagram (Responsive Flow)
+
+```mermaid
+graph TD;
+    A[Extra Small]:::blue --> B[flex-row / flex-row-reverse]:::green
+    A --> C[flex-column / flex-column-reverse]:::orange
+    B --> D[Responsive Versions: sm, md, lg, xl, xxl]:::purple
+    C --> D
+```
+
+---
+
+> 💡 **Tip:** Use **row for horizontal layouts** and **column for vertical layouts**, then adjust with **responsive breakpoints** to make layouts flexible.
+
+# 🌀 Flex Wrap Breakpoints in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![Flexbox Badge](https://img.shields.io/badge/Type-FlexWrap-orange)
+
+Bootstrap provides **responsive flex-wrap classes** that control whether flex items **wrap** onto multiple lines or stay on a **single line**, with support across all breakpoints.
+
+---
+
+## 🔹 Breakpoint Pattern
+
+```
+flex-{breakpoint}-{wrap}
+```
+
+- `{breakpoint}` → `sm`, `md`, `lg`, `xl`, `xxl`  
+- `{wrap}` → `wrap`, `nowrap`, `wrap-reverse`
+
+---
+
+## 📝 Complete List of Classes
+
+| Breakpoint | Wrap | No Wrap | Wrap Reverse |
+|------------|------|---------|--------------|
+| Extra Small (XS `<576px`) | `flex-wrap` | `flex-nowrap` | `flex-wrap-reverse` |
+| Small (SM `≥576px`) | `flex-sm-wrap` | `flex-sm-nowrap` | `flex-sm-wrap-reverse` |
+| Medium (MD `≥768px`) | `flex-md-wrap` | `flex-md-nowrap` | `flex-md-wrap-reverse` |
+| Large (LG `≥992px`) | `flex-lg-wrap` | `flex-lg-nowrap` | `flex-lg-wrap-reverse` |
+| Extra Large (XL `≥1200px`) | `flex-xl-wrap` | `flex-xl-nowrap` | `flex-xl-wrap-reverse` |
+| Extra Extra Large (XXL `≥1400px`) | `flex-xxl-wrap` | `flex-xxl-nowrap` | `flex-xxl-wrap-reverse` |
+
+---
+
+## ⚡ Example Code
+
+```html
+<div class="d-flex flex-sm-wrap flex-md-nowrap flex-lg-wrap-reverse bg-light p-2" style="width:220px;">
+  <div class="p-2 bg-primary text-white">Item 1</div>
+  <div class="p-2 bg-success text-white">Item 2</div>
+  <div class="p-2 bg-danger text-white">Item 3</div>
+  <div class="p-2 bg-warning">Item 4</div>
+</div>
+```
+
+---
+
+## 🌐 Mermaid Diagram (Flex Wrap Flow)
+
+```mermaid
+graph TD;
+    A[Flex Container]:::blue --> B[flex-wrap]:::green
+    A --> C[flex-nowrap]:::orange
+    A --> D[flex-wrap-reverse]:::red
+    B --> E[Responsive Versions: sm, md, lg, xl, xxl]:::purple
+    C --> E
+    D --> E
+```
+
+---
+
+> 💡 **Tip:** Use `flex-wrap` for **multi-line layouts**, `flex-nowrap` to **force items on one line**, and `flex-wrap-reverse` when you need items to **wrap in reverse order**.
+
+# 🔳 Flex Fill Breakpoints in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![Flexbox Badge](https://img.shields.io/badge/Type-FlexFill-orange)
+
+The **`flex-fill` classes** in Bootstrap make flex items **grow and share available space equally** inside a flex container.  
+They also support **responsive breakpoints** to control this behavior on different screen sizes.
+
+---
+
+## 🔹 Breakpoint Pattern
+
+```
+flex-{breakpoint}-fill
+```
+
+- `{breakpoint}` → `sm`, `md`, `lg`, `xl`, `xxl`  
+- `fill` → Forces the item to **take equal space** as siblings
+
+---
+
+## 📝 Complete List of Classes
+
+| Breakpoint | Class Example |
+|------------|---------------|
+| Extra Small (XS `<576px`) | `flex-fill` |
+| Small (SM `≥576px`) | `flex-sm-fill` |
+| Medium (MD `≥768px`) | `flex-md-fill` |
+| Large (LG `≥992px`) | `flex-lg-fill` |
+| Extra Large (XL `≥1200px`) | `flex-xl-fill` |
+| Extra Extra Large (XXL `≥1400px`) | `flex-xxl-fill` |
+
+---
+
+## ⚡ Example Code
+
+```html
+<div class="d-flex">
+  <div class="p-2 flex-sm-fill bg-primary text-white">Fill on SM+</div>
+  <div class="p-2 flex-md-fill bg-success text-white">Fill on MD+</div>
+  <div class="p-2 flex-lg-fill bg-danger text-white">Fill on LG+</div>
+</div>
+```
+
+---
+
+## 🌐 Mermaid Diagram (Flex Fill Flow)
+
+```mermaid
+graph TD
+    A[Flex Container]
+    B[flex-fill XS]
+    C[flex-sm-fill 576px]
+    D[flex-md-fill 768px]
+    E[flex-lg-fill 992px]
+    F[flex-xl-fill 1200px]
+    G[flex-xxl-fill 1400px]
+
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
+    A --> G
+
+```
+
+
+---
+
+> 💡 **Tip:** Use `flex-fill` when you want **all items to automatically take equal width**, regardless of content size, with **responsive control**.
+
+# 📐 Display Property in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![CSS Badge](https://img.shields.io/badge/Type-Display-orange)
+
+The **display property** in Bootstrap is used to **control how elements are displayed** on the page. It helps to quickly switch elements between **block, inline, flex, grid, or hidden states** using utility classes.
+
+---
+
+## 🔹 Display Classes
+
+| Class              | Description                                    |
+|-------------------|-----------------------------------------------|
+| `.d-none`          | Hides the element                             |
+| `.d-inline`        | Displays element **inline**                   |
+| `.d-inline-block`  | Displays element **inline-block**             |
+| `.d-block`         | Displays element as **block**                 |
+| `.d-flex`          | Displays element as **flex container**        |
+| `.d-inline-flex`   | Displays element as **inline-flex**           |
+| `.d-grid`          | Displays element as **grid container**        |
+| `.d-inline-grid`   | Displays element as **inline-grid**           |
+| `.d-table`         | Displays element as **table**                 |
+| `.d-table-row`     | Displays element as **table-row**             |
+| `.d-table-cell`    | Displays element as **table-cell**            |
+
+---
+
+## 🔹 Responsive Variants
+
+You can also make display responsive using breakpoints:
+
+```
+d-{breakpoint}-{value}
+```
+
+- Breakpoints: `sm`, `md`, `lg`, `xl`, `xxl`  
+- Example:  
+  - `d-sm-block` → block on small screens and above  
+  - `d-md-flex` → flex on medium screens and above  
+
+---
+
+## ⚡ Example Code
+
+```html
+<div class="d-none d-md-block bg-primary text-white p-2">
+  Visible only on medium screens and above
+</div>
+
+<div class="d-flex d-sm-inline-flex bg-success text-white p-2">
+  Flex container on all screens, inline-flex on small+
+</div>
+```
+
+---
+
+## 🌐 Mermaid Diagram (Display Flow)
+
+```mermaid
+graph TD
+    A[Element]
+    B[d-none]
+    C[d-block]
+    D[d-inline]
+    E[d-flex]
+    F[d-grid]
+
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
+```
+
+---
+
+> 💡 **Tip:** Use display utilities in Bootstrap to **quickly change element visibility and layout** without writing custom CSS.
+
+# 🖨️ Display Print Property in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![Print Badge](https://img.shields.io/badge/Type-Print-orange)
+
+The **display print property** in Bootstrap is used to **control element visibility when printing a page**. It allows developers to **show or hide elements specifically for printed documents** using utility classes.
+
+---
+
+## 🔹 Print Display Classes
+
+| Class                | Description |
+|---------------------|-------------|
+| `.d-print-none`      | Hides the element **only when printing** |
+| `.d-print-inline`    | Displays element **inline** when printing |
+| `.d-print-inline-block` | Displays element **inline-block** when printing |
+| `.d-print-block`     | Displays element as **block** when printing |
+
+---
+
+## ⚡ Example Code
+
+```html
+<div class="d-none d-print-block bg-primary text-white p-2">
+  This element is hidden on screen but visible when printing
+</div>
+
+<div class="d-block d-print-none bg-success text-white p-2">
+  This element is visible on screen but hidden in print
+</div>
+```
+
+---
+
+## 🌐 Mermaid Diagram (Print Display Flow)
+
+```mermaid
+graph TD
+    A[Element]
+    B[d-print-none --> Hidden in print]
+    C[d-print-inline --> Inline in print]
+    D[d-print-inline-block --> Inline-block in print]
+    E[d-print-block --> Block in print]
+
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+```
+
+---
+
+> 💡 **Tip:** Use print display classes to **optimize your page layout for printing** and hide unnecessary elements like menus or ads.
+
+# 📊 Display Property Breakpoints in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![CSS Badge](https://img.shields.io/badge/Type-Display-orange)
+
+Bootstrap provides **responsive display utility classes** that allow you to control **how elements are displayed** on **different screen sizes**.
+
+---
+
+## 🔹 Breakpoint Pattern
+
+```
+d-{breakpoint}-{value}
+```
+
+- `{breakpoint}` → `sm`, `md`, `lg`, `xl`, `xxl`  
+- `{value}` → `none`, `inline`, `inline-block`, `block`, `flex`, `inline-flex`, `grid`, `inline-grid`, `table`, etc.
+
+---
+
+## 📝 Complete List of Classes by Breakpoints
+
+| Breakpoint | Example Classes |
+|------------|----------------|
+| Extra Small (XS `<576px`) | `d-none`, `d-block`, `d-flex`, `d-inline` |
+| Small (SM `≥576px`)       | `d-sm-none`, `d-sm-block`, `d-sm-flex` |
+| Medium (MD `≥768px`)      | `d-md-none`, `d-md-block`, `d-md-flex` |
+| Large (LG `≥992px`)       | `d-lg-none`, `d-lg-block`, `d-lg-flex` |
+| Extra Large (XL `≥1200px`)| `d-xl-none`, `d-xl-block`, `d-xl-flex` |
+| Extra Extra Large (XXL `≥1400px`) | `d-xxl-none`, `d-xxl-block`, `d-xxl-flex` |
+
+---
+
+## ⚡ Example Code
+
+```html
+<div class="d-none d-md-block bg-primary text-white p-2">
+  Hidden on XS & SM, visible on MD and above
+</div>
+
+<div class="d-block d-lg-none bg-success text-white p-2">
+  Visible on XS, SM, MD; hidden on LG+
+</div>
+```
+
+---
+
+## 🌐 Mermaid Diagram (Responsive Display Flow)
+
+```mermaid
+graph TD
+    A[Element]
+    B[d-none / d-block XS]
+    C[d-sm-none / d-sm-block SM]
+    D[d-md-none / d-md-block MD]
+    E[d-lg-none / d-lg-block LG]
+    F[d-xl-none / d-xl-block XL]
+    G[d-xxl-none / d-xxl-block XXL]
+
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
+    A --> G
+```
+
+---
+
+> 💡 **Tip:** Use display breakpoints to **control visibility and layout on different screen sizes** without writing custom CSS.
+
+# 🖨️ Display Print Property Breakpoints in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![Print Badge](https://img.shields.io/badge/Type-Print-orange)
+
+Bootstrap provides **display utility classes for print** to control **element visibility when printing**.  
+These classes **do not have traditional breakpoints like screen sizes**, because they only apply **during printing**. However, you can combine them with responsive classes for **screen + print control**.
+
+---
+
+## 🔹 Print Display Classes
+
+| Class                | Description |
+|---------------------|-------------|
+| `.d-print-none`      | Hides element **only in print** |
+| `.d-print-inline`    | Displays element **inline in print** |
+| `.d-print-inline-block` | Displays element **inline-block in print** |
+| `.d-print-block`     | Displays element as **block in print** |
+
+---
+
+## ⚡ Example Code
+
+```html
+<div class="d-none d-print-block bg-primary text-white p-2">
+  Hidden on screen, visible in print
+</div>
+
+<div class="d-block d-print-none bg-success text-white p-2">
+  Visible on screen, hidden in print
+</div>
+```
+
+---
+
+## 💡 Key Notes
+
+- Print classes **only work when printing**, not on screens.  
+- You can **combine screen display classes** (like `d-sm-block`) with print classes:  
+
+```html
+<div class="d-none d-sm-block d-print-block">
+  Visible on SM+ screens and in print
+</div>
+```
+
+> ✅ **Tip:** Use print display utilities to **optimize printed documents** and hide unnecessary content like navigation bars, ads, or buttons.
+
+# 🌊 Float and Clear Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![CSS Badge](https://img.shields.io/badge/Type-Float-orange)
+
+Bootstrap provides **float and clear utility classes** to **control element positioning and flow**. These classes are used to make elements float left, right, or reset floating behavior using clear classes.
+
+---
+
+## 🔹 Float Classes
+
+| Class        | Description |
+|-------------|-------------|
+| `.float-start` | Floats element to the **left** (start of container) |
+| `.float-end`   | Floats element to the **right** (end of container) |
+| `.float-none`  | Removes any float, element becomes **normal flow** |
+
+✅ Responsive variants:  
+```
+float-{breakpoint}-{value}
+```
+- Breakpoints: `sm`, `md`, `lg`, `xl`, `xxl`  
+- Example: `float-md-start` → float left on **medium screens and above**
+
+---
+
+## 🔹 Clear Classes
+
+| Class         | Description |
+|---------------|-------------|
+| `.clearfix`   | Clears floats for parent container so it **wraps floated children properly** |
+| `.clear-start` | Clears float on the **left side** |
+| `.clear-end`   | Clears float on the **right side** |
+| `.clear-both`  | Clears float on **both sides** |
+
+---
+
+## ⚡ Example Code
+
+```html
+<div class="bg-light p-2">
+  <div class="float-start bg-primary text-white p-2">Float Left</div>
+  <div class="float-end bg-success text-white p-2">Float Right</div>
+  <div class="clearfix"></div>
+  <div class="bg-danger text-white p-2 mt-2">Normal Flow</div>
+</div>
+```
+
+---
+
+## 🌐 Mermaid Diagram (Float & Clear Flow)
+
+```mermaid
+graph TD
+    A[Parent Container]
+    B[float-start → left]
+    C[float-end → right]
+    D[float-none → normal flow]
+    E[clearfix → clears floats]
+
+    A --> B
+    A --> C
+    A --> D
+    B --> E
+    C --> E
+```
+
+---
+
+> 💡 **Tip:** Use float classes to **align elements horizontally**, and use clear or clearfix to **fix parent container height or reset flow**.
+
+# 🌊 Float & Clear Classes Breakpoints in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![CSS Badge](https://img.shields.io/badge/Type-Float-orange)
+
+Bootstrap provides **responsive float and clear utility classes** to control element positioning across different screen sizes.
+
+---
+
+## 🔹 Float Classes Breakpoints
+
+| Breakpoint | Float Left (Start) | Float Right (End) | Float None |
+|------------|------------------|-----------------|------------|
+| XS `<576px`  | `float-start`   | `float-end`     | `float-none` |
+| SM `≥576px`  | `float-sm-start` | `float-sm-end`  | `float-sm-none` |
+| MD `≥768px`  | `float-md-start` | `float-md-end`  | `float-md-none` |
+| LG `≥992px`  | `float-lg-start` | `float-lg-end`  | `float-lg-none` |
+| XL `≥1200px` | `float-xl-start` | `float-xl-end`  | `float-xl-none` |
+| XXL `≥1400px`| `float-xxl-start`| `float-xxl-end` | `float-xxl-none` |
+
+---
+
+## 🔹 Clear Classes Breakpoints
+
+Clear classes **don’t have screen-specific breakpoints**, but you can combine with responsive floats:
+
+| Class        | Description |
+|-------------|-------------|
+| `.clearfix`  | Clears floated children in parent container |
+| `.clear-start` | Clears float on the left side |
+| `.clear-end`   | Clears float on the right side |
+| `.clear-both`  | Clears float on both sides |
+
+✅ Example combining breakpoints:
+
+```html
+<div class="float-sm-start float-md-end clearfix bg-light p-2">
+  Responsive floated element
+</div>
+```
+
+---
+
+## 🌐 Mermaid Diagram (Float Breakpoints)
+
+```mermaid
+graph TD
+    A[Element] 
+    B[float-start / float-sm-start / ...] 
+    C[float-end / float-sm-end / ...] 
+    D[float-none / float-sm-none / ...] 
+
+    A --> B
+    A --> C
+    A --> D
+```
+
+---
+
+> 💡 **Tip:** Use **responsive float classes** to control horizontal alignment on different screens, and use **clear/clearfix** to maintain proper layout flow.
+
+# 📏 Width Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![CSS Badge](https://img.shields.io/badge/Type-Width-orange)
+
+Bootstrap provides **width utility classes** to quickly set the **width of elements** using percentages, pixels, or auto values. These classes are **responsive** and easy to use without custom CSS.
+
+---
+
+## 🔹 Width Classes (Basic)
+
+| Class          | Width Description |
+|----------------|-----------------|
+| `.w-25`        | Width: 25%      |
+| `.w-50`        | Width: 50%      |
+| `.w-75`        | Width: 75%      |
+| `.w-100`       | Width: 100%     |
+| `.w-auto`      | Width: auto (content-based) |
+
+---
+
+## 🔹 Responsive Width Classes
+
+Pattern:
+
+```
+w-{breakpoint}-{value}
+```
+
+- `{breakpoint}` → `sm`, `md`, `lg`, `xl`, `xxl`  
+- `{value}` → `25`, `50`, `75`, `100`, `auto`
+
+| Breakpoint | Example |
+|------------|---------|
+| XS `<576px` | `w-50` |
+| SM `≥576px` | `w-sm-50` |
+| MD `≥768px` | `w-md-50` |
+| LG `≥992px` | `w-lg-50` |
+| XL `≥1200px` | `w-xl-50` |
+| XXL `≥1400px` | `w-xxl-50` |
+
+---
+
+## ⚡ Example Code
+
+```html
+<div class="w-25 bg-primary text-white p-2">Width 25%</div>
+<div class="w-sm-50 w-md-75 bg-success text-white p-2">Responsive Width</div>
+<div class="w-100 bg-danger text-white p-2">Full Width</div>
+```
+
+---
+
+## 🌐 Mermaid Diagram (Width Classes Flow)
+
+```mermaid
+graph TD
+    A[Element]
+    B[w-25 / w-sm-25 / w-md-25 ...]
+    C[w-50 / w-sm-50 / w-md-50 ...]
+    D[w-75 / w-sm-75 / w-md-75 ...]
+    E[w-100 / w-sm-100 / w-md-100 ...]
+    F[w-auto / w-sm-auto / w-md-auto ...]
+
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
+```
+
+---
+
+> 💡 **Tip:** Use width classes for **quick layout adjustments** and combine with responsive breakpoints for **different screen sizes**.
 
 
