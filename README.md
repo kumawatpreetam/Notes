@@ -1414,4 +1414,221 @@ graph TD
 
 > 💡 **Tip:** Use width classes for **quick layout adjustments** and combine with responsive breakpoints for **different screen sizes**.
 
+# 📏 Height Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![CSS Badge](https://img.shields.io/badge/Type-Height-orange)
+
+Bootstrap provides **height utility classes** to quickly set the **height of elements** using percentages, pixels, or auto values. These classes are **responsive** and easy to use without writing custom CSS.
+
+---
+
+## 🔹 Height Classes (Basic)
+
+| Class          | Height Description |
+|----------------|-----------------|
+| `.h-25`        | Height: 25%      |
+| `.h-50`        | Height: 50%      |
+| `.h-75`        | Height: 75%      |
+| `.h-100`       | Height: 100%     |
+| `.h-auto`      | Height: auto (content-based) |
+
+---
+
+## 🔹 Responsive Height Classes
+
+Pattern:
+
+```
+h-{breakpoint}-{value}
+```
+
+- `{breakpoint}` → `sm`, `md`, `lg`, `xl`, `xxl`  
+- `{value}` → `25`, `50`, `75`, `100`, `auto`
+
+| Breakpoint | Example |
+|------------|---------|
+| XS `<576px` | `h-50` |
+| SM `≥576px` | `h-sm-50` |
+| MD `≥768px` | `h-md-50` |
+| LG `≥992px` | `h-lg-50` |
+| XL `≥1200px` | `h-xl-50` |
+| XXL `≥1400px` | `h-xxl-50` |
+
+---
+
+## ⚡ Example Code
+
+```html
+<div class="h-25 bg-primary text-white p-2">Height 25%</div>
+<div class="h-sm-50 h-md-75 bg-success text-white p-2">Responsive Height</div>
+<div class="h-100 bg-danger text-white p-2">Full Height</div>
+```
+
+---
+
+## 🌐 Mermaid Diagram (Height Classes Flow)
+
+```mermaid
+graph TD
+    A[Element]
+    B[h-25 / h-sm-25 / h-md-25 ...]
+    C[h-50 / h-sm-50 / h-md-50 ...]
+    D[h-75 / h-sm-75 / h-md-75 ...]
+    E[h-100 / h-sm-100 / h-md-100 ...]
+    F[h-auto / h-sm-auto / h-md-auto ...]
+
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
+```
+
+---
+
+> 💡 **Tip:** Use height classes for **quick vertical sizing** and combine with responsive breakpoints for **different devices**.
+
+# 🌐 Viewport Height and Width in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![CSS Badge](https://img.shields.io/badge/Type-Viewport-orange)
+
+In Bootstrap, **viewport height (vh)** and **viewport width (vw)** are utility classes used to set an element's size relative to the **browser's viewport**.  
+
+- **1vh** = 1% of the viewport height  
+- **1vw** = 1% of the viewport width  
+
+This is useful for making **full-screen sections, responsive layouts, and flexible containers**.
+
+---
+
+## 🔹 Viewport Width Classes
+
+| Class        | Description |
+|-------------|-------------|
+| `.vw-100`    | Width = 100% of viewport width |
+| `.vw-75`     | Width = 75% of viewport width |
+| `.vw-50`     | Width = 50% of viewport width |
+| `.vw-25`     | Width = 25% of viewport width |
+
+---
+
+## 🔹 Viewport Height Classes
+
+| Class        | Description |
+|-------------|-------------|
+| `.vh-100`    | Height = 100% of viewport height |
+| `.vh-75`     | Height = 75% of viewport height |
+| `.vh-50`     | Height = 50% of viewport height |
+| `.vh-25`     | Height = 25% of viewport height |
+
+---
+
+## ⚡ Example Code
+
+```html
+<div class="vh-100 vw-100 bg-primary text-white d-flex align-items-center justify-content-center">
+  Full viewport height and width
+</div>
+
+<div class="vh-50 vw-75 bg-success text-white p-2">
+  Half height, 75% width of viewport
+</div>
+```
+
+---
+
+## 🌐 Mermaid Diagram (Viewport Flow)
+
+```mermaid
+graph TD
+    A[Element]
+    B[vw-100 / vh-100 → full viewport]
+    C[vw-75 / vh-75 → 75% viewport]
+    D[vw-50 / vh-50 → 50% viewport]
+    E[vw-25 / vh-25 → 25% viewport]
+
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+```
+
+---
+
+> 💡 **Tip:** Use viewport classes to create **full-screen hero sections, modals, or responsive containers** that scale with the browser size.
+
+# 📌 Position Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![CSS Badge](https://img.shields.io/badge/Type-Position-green)
+
+Bootstrap provides **position utility classes** to control how an element is positioned on the page.  
+These are based on standard **CSS position values**.
+
+---
+
+## 🔹 Position Types
+
+| Class          | Description |
+|----------------|-------------|
+| `.position-static`   | Default, element is static (not positioned). |
+| `.position-relative` | Positioned relative to itself, allows offset using `top`, `right`, `bottom`, `left`. |
+| `.position-absolute` | Positioned relative to the nearest positioned ancestor. |
+| `.position-fixed`    | Positioned relative to the **viewport**, stays in place when scrolling. |
+| `.position-sticky`   | Sticks to a given position until a boundary is met. |
+
+---
+
+## 🔹 Center Helpers
+
+| Class                | Description |
+|-----------------------|-------------|
+| `.top-0`             | Top aligned (0%) |
+| `.bottom-0`          | Bottom aligned (0%) |
+| `.start-0`           | Left aligned (0%) |
+| `.end-0`             | Right aligned (0%) |
+| `.translate-middle`  | Center element both vertically and horizontally |
+| `.translate-middle-x`| Center horizontally only |
+| `.translate-middle-y`| Center vertically only |
+
+---
+
+## ⚡ Example Code
+
+```html
+<div class="position-relative bg-light" style="height:200px;">
+  <div class="position-absolute top-0 end-0 bg-primary text-white p-2">
+    Top Right
+  </div>
+  <div class="position-absolute bottom-0 start-0 bg-success text-white p-2">
+    Bottom Left
+  </div>
+  <div class="position-absolute top-50 start-50 translate-middle bg-danger text-white p-2">
+    Centered
+  </div>
+</div>
+```
+
+---
+
+## 🌐 Mermaid Diagram (Position Flow)
+
+```mermaid
+graph TD
+    A[Position Classes]
+    B[Static]
+    C[Relative]
+    D[Absolute]
+    E[Fixed]
+    F[Sticky]
+
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    A --> F
+```
+
+---
+
+> 💡 **Tip:** Use `position-relative` on the parent when you want an absolutely positioned child to be aligned within it.
 
