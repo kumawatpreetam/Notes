@@ -2015,6 +2015,54 @@ graph TD
     A --> F[.bg-opacity-100]
 ```
 
----
-
 > 💡 **Tip:** Use `.bg-opacity-*` with contextual background classes for better design control (e.g., `.bg-primary.bg-opacity-50`).
+
+# 🌐 How Opacity Works in CSS & Bootstrap  
+
+![CSS Badge](https://img.shields.io/badge/Topic-CSS-blue) ![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-Utilities-green)
+
+The **opacity property** in CSS (and Bootstrap utilities) controls the **transparency level** of an element.  
+It affects how much of the **background or underlying content** is visible through the element.
+
+## 🔹 Opacity Values  
+
+- The value ranges between **0 and 1** in CSS.  
+- Bootstrap uses **percentage-based classes** like `25`, `50`, `75`, `100`.  
+
+| CSS Value | Bootstrap Equivalent | Effect |
+|-----------|----------------------|--------|
+| `opacity: 0`   | Not available (custom CSS) | Fully transparent |
+| `opacity: 0.25`| `.bg-opacity-25` / `.text-primary-opacity-25` | 25% visible |
+| `opacity: 0.5` | `.bg-opacity-50` / `.text-primary-opacity-50` | 50% visible |
+| `opacity: 0.75`| `.bg-opacity-75` / `.text-primary-opacity-75` | 75% visible |
+| `opacity: 1`   | `.bg-opacity-100` / `.text-primary-opacity-100` | Fully visible |
+
+## ⚡ Example Code  
+
+```html
+<!-- Background Opacity Example -->
+<div class="bg-primary bg-opacity-25 text-dark p-3">25% Visible</div>
+<div class="bg-primary bg-opacity-50 text-white p-3">50% Visible</div>
+<div class="bg-primary bg-opacity-75 text-white p-3">75% Visible</div>
+<div class="bg-primary bg-opacity-100 text-white p-3">100% Visible</div>
+```
+
+## 📊 Mermaid Diagram  
+
+```mermaid
+graph LR
+    A[Opacity] --> B[0 → Fully Transparent]
+    A --> C[0.25 → 25% Visible]
+    A --> D[0.5 → 50% Visible]
+    A --> E[0.75 → 75% Visible]
+    A --> F[1 → Fully Opaque]
+```
+
+## 🔎 Key Points  
+
+- ✅ **`opacity` applies to the entire element** (background, text, borders).  
+- ✅ Bootstrap’s `.bg-opacity-*` only adjusts the **background layer**, keeping text fully visible.  
+- ✅ Higher value = less transparent, lower value = more transparent.  
+
+> 💡 **Tip:** Use Bootstrap’s opacity utilities instead of raw CSS when working with components for **consistent theming**.
+
