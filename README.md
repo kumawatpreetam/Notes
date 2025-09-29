@@ -2462,3 +2462,251 @@ graph TD;
 classDef blue fill:#3498db,color:#fff,stroke:#2c3e50;
 classDef green fill:#2ecc71,color:#fff,stroke:#27ae60;
 ```
+
+# ✨ Text Decoration Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Framework-Bootstrap-blue)  
+![Text Badge](https://img.shields.io/badge/Feature-Text_Decoration-orange)  
+
+In **Bootstrap**, **text decoration classes** are utility classes used to **add or remove decorations** like underline, line-through, or overline on text. These classes help **style text quickly** without custom CSS.
+
+---
+
+## 🔹 Text Decoration Classes
+
+| Class             | Description                         |
+|------------------|-------------------------------------|
+| `text-decoration-none` | Removes all text decorations (no underline) |
+| `text-decoration-underline` | Adds underline to text          |
+| `text-decoration-line-through` | Adds line-through (strikethrough) |
+| `text-decoration-overline` | Adds overline above text        |
+
+---
+
+## 🧑‍💻 Example
+
+```html
+<p class="text-decoration-none">No decoration text</p>
+<p class="text-decoration-underline">Underlined text</p>
+<p class="text-decoration-line-through">Strikethrough text</p>
+<p class="text-decoration-overline">Overlined text</p>
+```
+
+```mermaid
+
+graph TD;
+    A[Text Decoration Classes]:::blue --> B[text-decoration-none]:::green
+    A --> C[text-decoration-underline]:::green
+    A --> D[text-decoration-line-through]:::green
+    A --> E[text-decoration-overline]:::green
+
+    B --> F[No Decoration]
+    C --> G[Underline]
+    D --> H[Line-Through / Strikethrough]
+    E --> I[Overline]
+
+classDef blue fill:#3498db,color:#fff,stroke:#2c3e50;
+classDef green fill:#2ecc71,color:#fff,stroke:#27ae60;
+```
+
+# 📝 Text Heading Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Framework-Bootstrap-blue)  
+![Text Badge](https://img.shields.io/badge/Feature-Headings-orange)  
+
+In **Bootstrap**, **text heading classes** are utility classes used to **style headings and text sizes** without writing custom CSS. They help maintain **consistent typography** for headings (`h1`–`h6`) and other text elements.
+
+---
+
+## 🔹 Heading Classes
+
+| Class       | Description                  |
+|------------|------------------------------|
+| `h1`       | Largest heading              |
+| `h2`       | Second largest heading       |
+| `h3`       | Medium-large heading         |
+| `h4`       | Medium heading               |
+| `h5`       | Small-medium heading         |
+| `h6`       | Smallest heading             |
+| `display-1`| Very large display heading   |
+| `display-2`| Large display heading        |
+| `display-3`| Medium display heading       |
+| `display-4`| Small display heading        |
+
+---
+
+## 🧑‍💻 Example
+
+```html
+<h1 class="h1">Heading 1</h1>
+<h3 class="h3">Heading 3</h3>
+<h5 class="h5">Heading 5</h5>
+<p class="display-1">Display 1 Text</p>
+<p class="display-4">Display 4 Text</p>
+```
+
+```mermaid
+graph TD;
+    A[Text Heading Classes]:::blue --> B[h1 / h2 / h3 / h4 / h5 / h6]:::green
+    A --> C[display-1 / display-2 / display-3 / display-4]:::orange
+
+    B --> D[Standard Headings]
+    C --> E[Large Display Headings]
+
+classDef blue fill:#3498db,color:#fff,stroke:#2c3e50;
+classDef green fill:#2ecc71,color:#fff,stroke:#27ae60;
+classDef orange fill:#e67e22,color:#fff,stroke:#d35400;
+```
+
+# 📖 Lead Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Framework-Bootstrap-blue)  
+![Text Badge](https://img.shields.io/badge/Feature-Lead_Text-orange)  
+
+In **Bootstrap**, the **`lead` class** is used to **highlight important paragraphs** by making the text slightly larger and lighter in weight. It helps create a **visual emphasis** for introductions, summaries, or key information in a section.
+
+---
+
+## 🔹 Purpose of `lead` Class
+- ✅ Makes text **stand out** from normal paragraphs.  
+- ✅ Used for **introductory or summary text**.  
+- ✅ Enhances **readability** and **focus**.  
+- ✅ Provides **professional design consistency**.  
+
+---
+
+## 🧑‍💻 Example
+
+```html
+<p class="lead">
+  This is an example of lead text. It is slightly larger and more noticeable.
+</p>
+
+<p>
+  This is normal paragraph text. It appears smaller and less emphasized.
+</p>
+```
+
+```mermaid
+graph TD;
+    A[Bootstrap Text Classes]:::blue --> B[lead Class]:::green
+    B --> C[Highlight Important Text]:::orange
+    B --> D[Introductory Paragraphs]:::orange
+    B --> E[Summaries & Key Notes]:::orange
+
+classDef blue fill:#3498db,color:#fff,stroke:#2c3e50;
+classDef green fill:#2ecc71,color:#fff,stroke:#27ae60;
+classDef orange fill:#f39c12,color:#fff,stroke:#d35400;
+```
+
+# 📋 List Style Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Framework-Bootstrap-blue)  
+![Text Badge](https://img.shields.io/badge/Feature-List_Style-orange)  
+
+In **Bootstrap**, **list style classes** are utility classes used to **control how lists are displayed**. They help in removing default bullets/numbers, making lists inline, or unstyled for better customization.
+
+---
+
+## 🔹 List Style Classes
+
+| Class          | Description |
+|----------------|-------------|
+| `list-unstyled` | Removes default list styles (no bullets/numbers) but keeps indentation. |
+| `list-inline`   | Displays list items **horizontally (inline)**. |
+| `list-inline-item` | Used inside `list-inline` to make each `<li>` inline. |
+
+---
+
+## 🧑‍💻 Example
+
+```html
+<!-- Unstyled List -->
+<ul class="list-unstyled">
+  <li>Home</li>
+  <li>About</li>
+  <li>Contact</li>
+</ul>
+
+<!-- Inline List -->
+<ul class="list-inline">
+  <li class="list-inline-item">Home</li>
+  <li class="list-inline-item">About</li>
+  <li class="list-inline-item">Contact</li>
+</ul>
+```
+
+```mermaid
+graph TD;
+    A[List Style Classes]:::blue --> B[list-unstyled]:::green
+    A --> C[list-inline]:::orange
+    C --> D[list-inline-item]:::purple
+
+    B --> E[Removes Bullets/Numbers]
+    C --> F[Displays List Items Inline]
+    D --> G[Applies Inline Style to <li>]
+
+classDef blue fill:#3498db,color:#fff,stroke:#2c3e50;
+classDef green fill:#2ecc71,color:#fff,stroke:#27ae60;
+classDef orange fill:#e67e22,color:#fff,stroke:#d35400;
+classDef purple fill:#9b59b6,color:#fff,stroke:#8e44ad;
+```
+
+# 💬 Blockquote Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Framework-Bootstrap-blue)  
+![Text Badge](https://img.shields.io/badge/Feature-Blockquote-orange)  
+
+In **Bootstrap**, **blockquote classes** are used to style **quoted content**. They make quotes visually distinct with proper alignment, font styling, and citation formatting.
+
+---
+
+## 🔹 Blockquote Classes
+
+| Class              | Description |
+|--------------------|-------------|
+| `blockquote`       | Applies default blockquote styling (larger font, margins). |
+| `blockquote-footer`| Used for **citation/author name** below the quote. |
+| `text-center`      | Centers the quote text. |
+| `text-end`         | Right-aligns the quote text. |
+
+---
+
+## 🧑‍💻 Example
+
+```html
+<blockquote class="blockquote">
+  <p>
+    "The only way to do great work is to love what you do."
+  </p>
+  <footer class="blockquote-footer">
+    Steve Jobs
+  </footer>
+</blockquote>
+
+<!-- Center Aligned -->
+<blockquote class="blockquote text-center">
+  <p>
+    "Success is not the key to happiness. Happiness is the key to success."
+  </p>
+  <footer class="blockquote-footer">
+    Albert Schweitzer
+  </footer>
+</blockquote>
+```
+
+```mermaid
+graph TD;
+    A[Blockquote Classes]:::blue --> B[blockquote]:::green
+    A --> C[blockquote-footer]:::orange
+    A --> D[text-center / text-end]:::purple
+
+    B --> E[Styles Quoted Text]
+    C --> F[Adds Citation/Author]
+    D --> G[Aligns Quote Text]
+
+classDef blue fill:#3498db,color:#fff,stroke:#2c3e50;
+classDef green fill:#2ecc71,color:#fff,stroke:#27ae60;
+classDef orange fill:#e67e22,color:#fff,stroke:#d35400;
+classDef purple fill:#9b59b6,color:#fff,stroke:#8e44ad;
+```
