@@ -2066,3 +2066,399 @@ graph LR
 
 > 💡 **Tip:** Use Bootstrap’s opacity utilities instead of raw CSS when working with components for **consistent theming**.
 
+# 📝 Text Alignment Classes in Bootstrap  
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![Text Badge](https://img.shields.io/badge/Type-TextAlignment-orange)
+
+Bootstrap provides **text alignment utility classes** to align text horizontally within its container.  
+These are responsive, so you can control alignment at different breakpoints.
+
+---
+
+## 🔹 Syntax  
+
+```html
+.text-{alignment}-{breakpoint}
+```
+
+- `{alignment}` → `start`, `center`, `end`  
+- `{breakpoint}` → `sm`, `md`, `lg`, `xl`, `xxl` (optional)  
+
+---
+
+## 🔹 Available Classes  
+
+| Class               | Description |
+|---------------------|-------------|
+| `.text-start`       | Aligns text to the left (LTR) / right (RTL). |
+| `.text-center`      | Centers the text horizontally. |
+| `.text-end`         | Aligns text to the right (LTR) / left (RTL). |
+
+---
+
+## 🔹 Responsive Variations  
+
+You can use breakpoints to apply alignment only on specific screen sizes:  
+
+- `.text-sm-start`, `.text-sm-center`, `.text-sm-end`  
+- `.text-md-start`, `.text-md-center`, `.text-md-end`  
+- `.text-lg-start`, `.text-lg-center`, `.text-lg-end`  
+- `.text-xl-start`, `.text-xl-center`, `.text-xl-end`  
+- `.text-xxl-start`, `.text-xxl-center`, `.text-xxl-end`  
+
+---
+
+## ⚡ Example Code  
+
+```html
+<p class="text-start">Left aligned text</p>
+<p class="text-center">Center aligned text</p>
+<p class="text-end">Right aligned text</p>
+
+<!-- Responsive Example -->
+<p class="text-sm-center text-lg-end">Centered on small, Right on large</p>
+```
+
+---
+
+## 📊 Mermaid Diagram  
+
+```mermaid
+graph TD
+    A[Text Alignment] --> B[.text-start]
+    A --> C[.text-center]
+    A --> D[.text-end]
+    A --> E[Responsive Variants: sm, md, lg, xl, xxl]
+```
+
+---
+
+> 💡 **Tip:** Use responsive text alignment classes for better control on different screen sizes.
+
+# 🔡 Text Transform Classes in Bootstrap  
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue) ![Text Badge](https://img.shields.io/badge/Type-TextTransform-green)
+
+Bootstrap provides **text transform utility classes** that let you control the **capitalization** of text.  
+These classes apply CSS `text-transform` property directly to your text.
+
+---
+
+## 🔹 Available Classes  
+
+| Class              | CSS Equivalent          | Description |
+|--------------------|-------------------------|-------------|
+| `.text-lowercase`  | `text-transform: lowercase;` | Transforms all text to lowercase. |
+| `.text-uppercase`  | `text-transform: uppercase;` | Transforms all text to uppercase. |
+| `.text-capitalize` | `text-transform: capitalize;` | Capitalizes the first letter of each word. |
+
+---
+
+## ⚡ Example Code  
+
+```html
+<p class="text-lowercase">THIS WILL BECOME lowercase</p>
+<p class="text-uppercase">this will become UPPERCASE</p>
+<p class="text-capitalize">this will become Capitalized</p>
+```
+
+---
+
+## 📊 Mermaid Diagram  
+
+```mermaid
+graph TD
+    A[Text Transform Classes] --> B[.text-lowercase]
+    A --> C[.text-uppercase]
+    A --> D[.text-capitalize]
+```
+
+---
+
+## 🔎 Key Points  
+
+- ✅ Works on **inline, block, and heading** text.  
+- ✅ Does **not** change the original text content, only its **visual display**.  
+- ✅ Useful for headings, buttons, and styled text.  
+
+---
+
+> 💡 **Tip:** Use `.text-uppercase` for buttons and labels to make them stand out.
+
+# 🔤 Breakpoints of Text Transform Classes  
+
+![Bootstrap Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Text Badge](https://img.shields.io/badge/Utility-TextTransform-green)  
+
+Bootstrap provides **text transform classes** to change the capitalization of text. These classes can also be applied **with breakpoints** for responsive design.  
+
+---
+
+## 📌 Available Text Transform Classes
+- `text-lowercase` → makes all text lowercase  
+- `text-uppercase` → makes all text uppercase  
+- `text-capitalize` → capitalizes the first letter of each word  
+
+---
+
+## 📐 Breakpoint Variations
+You can use **responsive prefixes** (`sm`, `md`, `lg`, `xl`, `xxl`) to apply these classes at different screen sizes.
+
+| Class Pattern | Example | Screen Size Applied |
+|---------------|---------|----------------------|
+| `text-{breakpoint}-lowercase` | `text-md-lowercase` | From `md` and above |
+| `text-{breakpoint}-uppercase` | `text-lg-uppercase` | From `lg` and above |
+| `text-{breakpoint}-capitalize` | `text-xl-capitalize` | From `xl` and above |
+
+---
+
+## 💻 Example Code
+```html
+<p class="text-sm-uppercase">This text is uppercase from small devices and above.</p>
+<p class="text-md-lowercase">This text is lowercase from medium devices and above.</p>
+<p class="text-lg-capitalize">This text is capitalized from large devices and above.</p>
+```
+## Block Digram
+
+```mermaid
+graph LR;
+    A[Extra Small <576px]:::blue -->|text-xs-*| B[Small ≥576px]:::green
+    B -->|text-sm-*| C[Medium ≥768px]:::orange
+    C -->|text-md-*| D[Large ≥992px]:::red
+    D -->|text-lg-*| E[X-Large ≥1200px]:::purple
+    E -->|text-xl-*| F[XX-Large ≥1400px]:::pink
+
+classDef blue fill:#007bff,color:#fff;
+classDef green fill:#28a745,color:#fff;
+classDef orange fill:#fd7e14,color:#fff;
+classDef red fill:#dc3545,color:#fff;
+classDef purple fill:#6f42c1,color:#fff;
+classDef pink fill:#d63384,color:#fff;
+```
+
+# 📝 Text Wrapping and Overflow Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Framework-Bootstrap-blue)  
+![Text Badge](https://img.shields.io/badge/Feature-Text-Informational-orange)  
+![Responsive Badge](https://img.shields.io/badge/Responsive-Yes-success)
+
+In **Bootstrap**, **text wrapping** and **overflow classes** help control how content behaves inside containers. They ensure that **text and elements remain readable and properly contained** in responsive layouts.
+
+---
+
+## 🔹 Text Wrapping Classes
+
+| Class | Description |
+|-------|-------------|
+| `text-wrap` | Allows long text to **wrap to the next line**. |
+| `text-nowrap` | Keeps text **on a single line**, preventing wrapping. |
+
+**Example:**
+```html
+<p class="text-wrap">This long text will wrap to the next line automatically.</p>
+<p class="text-nowrap">This text will stay in a single line and may overflow.</p>
+```
+
+## ⚡ Overflow Classes in Bootstrap
+
+| Class             | Description                                                   |
+|------------------|---------------------------------------------------------------|
+| `overflow-auto`   | Adds **scrollbars** if content exceeds container size.       |
+| `overflow-hidden` | **Hides** overflowing content.                                |
+| `overflow-visible`| Shows all content, even if it **overflows**.                 |
+| `overflow-scroll` | **Always** shows scrollbars, regardless of content size.     |
+
+```mermaid
+graph TD;
+    A[Text & Overflow Classes]:::blue --> B[Text Wrapping]:::green
+    A --> C[Overflow Classes]:::orange
+    B --> D[text-wrap / text-nowrap]:::purple
+    C --> E[overflow-auto / overflow-hidden / overflow-visible / overflow-scroll]:::red
+
+classDef blue fill:#3498db,color:#fff,stroke:#2c3e50;
+classDef green fill:#2ecc71,color:#fff,stroke:#27ae60;
+classDef orange fill:#e67e22,color:#fff,stroke:#d35400;
+classDef purple fill:#9b59b6,color:#fff,stroke:#8e44ad;
+classDef red fill:#e74c3c,color:#fff,stroke:#c0392b;
+```
+
+# 🔠 Font Size Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Framework-Bootstrap-blue)  
+![Text Badge](https://img.shields.io/badge/Feature-Font_Size-orange)  
+![Responsive Badge](https://img.shields.io/badge/Responsive-Yes-success)
+
+In **Bootstrap**, **font size classes** are utility classes that allow you to **quickly adjust the size of text** without writing custom CSS. They are useful for headings, paragraphs, and small labels, ensuring consistent and responsive typography.
+
+---
+
+## 🔹 Font Size Classes
+
+| Class       | Size Description |
+|------------|-----------------|
+| `fs-1`     | Extra large text |
+| `fs-2`     | Large text      |
+| `fs-3`     | Medium-large text |
+| `fs-4`     | Medium text     |
+| `fs-5`     | Small-medium text |
+| `fs-6`     | Small text      |
+
+---
+
+## 🧑‍💻 Example
+
+```html
+<!-- Copy Code 👇 -->
+<p class="fs-1">This is extra large text (fs-1)</p>
+<p class="fs-3">This is medium-large text (fs-3)</p>
+<p class="fs-6">This is small text (fs-6)</p>
+```
+
+## 🌐 Font Size Classes Diagram
+
+```mermaid
+graph TD;
+    A[Font Size Classes]:::blue --> B[fs-1]:::green
+    A --> C[fs-2]:::green
+    A --> D[fs-3]:::green
+    A --> E[fs-4]:::green
+    A --> F[fs-5]:::green
+    A --> G[fs-6]:::green
+
+    B --> H[Extra Large Text]
+    C --> I[Large Text]
+    D --> J[Medium-Large Text]
+    E --> K[Medium Text]
+    F --> L[Small-Medium Text]
+```
+
+# 🅰️ Font Weight Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Framework-Bootstrap-blue)  
+![Text Badge](https://img.shields.io/badge/Feature-Font_Weight-orange)  
+
+In **Bootstrap**, **font weight classes** are utility classes used to **adjust the thickness (boldness) of text**. These classes help make text **light, normal, or bold** without writing custom CSS.
+
+---
+
+## 🔹 Font Weight Classes
+
+| Class           | Description                |
+|-----------------|----------------------------|
+| `fw-light`      | Light text weight          |
+| `fw-normal`     | Normal (default) text weight|
+| `fw-semibold`   | Semi-bold text weight      |
+| `fw-bold`       | Bold text weight           |
+
+---
+
+## 🧑‍💻 Example
+
+```html
+<p class="fw-light">This is light text (fw-light)</p>
+<p class="fw-normal">This is normal text (fw-normal)</p>
+<p class="fw-semibold">This is semi-bold text (fw-semibold)</p>
+<p class="fw-bold">This is bold text (fw-bold)</p>
+```
+
+```mermaid
+graph TD;
+    A[Font Weight Classes]:::blue --> B[fw-light]:::green
+    A --> C[fw-normal]:::green
+    A --> D[fw-semibold]:::green
+    A --> E[fw-bold]:::green
+
+    B --> F[Light Text]
+    C --> G[Normal Text]
+    D --> H[Semi-Bold Text]
+    E --> I[Bold Text]
+
+classDef blue fill:#3498db,color:#fff,stroke:#2c3e50;
+classDef green fill:#2ecc71,color:#fff,stroke:#27ae60;
+```
+
+# 🎨 Font Style Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Framework-Bootstrap-blue)  
+![Text Badge](https://img.shields.io/badge/Feature-Font_Style-orange)  
+
+In **Bootstrap**, **font style classes** are utility classes used to **change the style of text**, mainly to make it **italic or normal** without writing custom CSS.
+
+---
+
+## 🔹 Font Style Classes
+
+| Class        | Description             |
+|--------------|------------------------|
+| `fst-italic` | Makes text **italic**   |
+| `fst-normal` | Sets text back to **normal** style |
+
+---
+
+## 🧑‍💻 Example
+
+```html
+<p class="fst-italic">This text is italic (fst-italic)</p>
+<p class="fst-normal">This text is normal (fst-normal)</p>
+```
+
+```mermaid
+graph TD;
+    A[Font Style Classes]:::blue --> B[fst-italic]:::green
+    A --> C[fst-normal]:::green
+
+    B --> D[Italic Text]
+    C --> E[Normal Text]
+
+classDef blue fill:#3498db,color:#fff,stroke:#2c3e50;
+classDef green fill:#2ecc71,color:#fff,stroke:#27ae60;
+```
+
+# 📏 Line Height Classes in Bootstrap
+
+![Bootstrap Badge](https://img.shields.io/badge/Framework-Bootstrap-blue)  
+![Text Badge](https://img.shields.io/badge/Feature-Line_Height-orange)  
+
+In **Bootstrap**, **line-height classes** control the **vertical spacing between lines of text**. These classes make text **more readable and visually balanced**.
+
+---
+
+## 🔹 Line Height Classes
+
+| Class        | Description                       |
+|--------------|-----------------------------------|
+| `lh-1`       | Line height = 1 (tight)           |
+| `lh-sm`      | Smaller line height               |
+| `lh-base`    | Default line height               |
+| `lh-lg`      | Larger line height                |
+| `lh-100`     | Line height = 1 (numeric)         |
+| `lh-125`     | Line height = 1.25                |
+| `lh-150`     | Line height = 1.5                  |
+
+---
+
+## 🧑‍💻 Example
+
+```html
+<p class="lh-1">Tight line height example (lh-1)</p>
+<p class="lh-base">Default line height example (lh-base)</p>
+<p class="lh-lg">Large line height example (lh-lg)</p>
+```
+
+```mermaid
+graph TD;
+    A[Line Height Classes]:::blue --> B[lh-1]:::green
+    A --> C[lh-sm]:::green
+    A --> D[lh-base]:::green
+    A --> E[lh-lg]:::green
+    A --> F[lh-100 / lh-125 / lh-150]:::green
+
+    B --> G[Tight Line Height]
+    C --> H[Small Line Height]
+    D --> I[Default Line Height]
+    E --> J[Large Line Height]
+    F --> K[Numeric Line Heights]
+
+classDef blue fill:#3498db,color:#fff,stroke:#2c3e50;
+classDef green fill:#2ecc71,color:#fff,stroke:#27ae60;
+```
