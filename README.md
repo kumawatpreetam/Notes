@@ -2710,3 +2710,513 @@ classDef green fill:#2ecc71,color:#fff,stroke:#27ae60;
 classDef orange fill:#e67e22,color:#fff,stroke:#d35400;
 classDef purple fill:#9b59b6,color:#fff,stroke:#8e44ad;
 ```
+
+# 🔘 Button Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-UI_Components-green)  
+
+Bootstrap provides **predefined button classes** to style buttons with different colors, sizes, and states. These classes make it easy to create **consistent and responsive buttons** without writing custom CSS.  
+
+---
+
+## ✅ Common Button Classes  
+
+| Class              | Description |
+|--------------------|-------------|
+| `btn`              | Base button class (must be included) |
+| `btn-primary`      | Blue button – main action |
+| `btn-secondary`    | Gray button – secondary action |
+| `btn-success`      | Green button – success action |
+| `btn-danger`       | Red button – danger action |
+| `btn-warning`      | Yellow button – warning |
+| `btn-info`         | Light blue button – info |
+| `btn-light`        | White/light button |
+| `btn-dark`         | Black/dark button |
+| `btn-link`         | Styled as hyperlink |
+
+---
+
+## 📏 Button Sizes  
+
+| Class         | Description |
+|---------------|-------------|
+| `btn-lg`      | Large button |
+| `btn-sm`      | Small button |
+| `btn-block`   | Full-width button |
+
+---
+
+## 💻 Code Example  
+
+> 💡 Tip: Always start with `btn` and then add a modifier class like `btn-primary`.
+
+```html
+<!-- Copy Code 👇 -->
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success btn-lg">Large Success</button>
+<button class="btn btn-danger btn-sm">Small Danger</button>
+<button class="btn btn-warning btn-block">Full Width Warning</button>
+```
+
+```mermaid
+graph TD;
+    A[btn] --> B[btn-primary]
+    A[btn] --> C[btn-secondary]
+    A[btn] --> D[btn-success]
+    A[btn] --> E[btn-danger]
+    A[btn] --> F[btn-warning]
+    A[btn] --> G[btn-info]
+    A[btn] --> H[btn-light]
+    A[btn] --> I[btn-dark]
+    A[btn] --> J[btn-link]
+```
+
+# 🔳 Outline Button Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-UI_Components-green)  
+
+**Outline button classes** in Bootstrap create buttons with only a **border color** and **transparent background**.  
+They look lighter and are useful for **secondary actions** or when you don’t want solid color buttons.  
+
+---
+
+## ✅ Key Features  
+- Use `btn-outline-*` instead of `btn-*`.  
+- Same color variants as normal buttons.  
+- Become filled automatically when **hovered or clicked**.  
+- Can be used with **all sizes** (`btn-lg`, `btn-sm`) and shapes (`btn-block`).  
+
+---
+
+## 📊 Outline Button Variants  
+
+| Class                     | Description |
+|----------------------------|-------------|
+| `btn-outline-primary`      | Blue border, transparent background |
+| `btn-outline-secondary`    | Gray border |
+| `btn-outline-success`      | Green border |
+| `btn-outline-danger`       | Red border |
+| `btn-outline-warning`      | Yellow border |
+| `btn-outline-info`         | Light blue border |
+| `btn-outline-light`        | White/light border |
+| `btn-outline-dark`         | Black/dark border |
+
+---
+
+## 💻 Code Example  
+
+```html
+<!-- Copy Code 👇 -->
+<button type="button" class="btn btn-outline-primary">Primary Outline</button>
+<button type="button" class="btn btn-outline-success btn-lg">Large Success</button>
+<button type="button" class="btn btn-outline-danger btn-sm">Small Danger</button>
+<button type="button" class="btn btn-outline-dark btn-block">Full Width Dark</button>
+```
+
+```mermaid
+graph TD;
+    A[btn-outline-*] --> B[btn-outline-primary]
+    A --> C[btn-outline-success]
+    A --> D[btn-outline-danger]
+    A --> E[btn-outline-warning]
+    A --> F[btn-outline-info]
+    A --> G[btn-outline-light]
+    A --> H[btn-outline-dark]
+```
+# 🔘 Active & Disabled Button Classes in Bootstrap 5  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-Button_States-green)  
+
+Bootstrap 5 provides **`active`** and **`disabled`** classes to indicate different states of a button.  
+These states improve **user interaction** and **UI feedback**.  
+
+---
+
+## ✅ 1. Active Class (`.active`)  
+- Adds a **pressed/selected look** to a button.  
+- Often used for toggle buttons or navigation.  
+- Can be applied with `.active` class or `aria-pressed="true"`.  
+
+### 💻 Example  
+
+```html
+<!-- Copy Code 👇 -->
+<button type="button" class="btn btn-primary active" aria-pressed="true">
+  Active Button
+</button>
+```
+
+## ✅ 1. Disabled Class (`.disabled`)  
+## ✅ Key Features  
+- Adds **faded/greyed-out look**.  
+- Prevents click events for `<button>` and `<input>`.  
+- For `<a>` links, you must use both `.disabled` and `tabindex="-1"` with `aria-disabled="true"` to make it **truly non-interactive**.  
+- Works with all button styles (`btn-primary`, `btn-success`, etc.).  
+
+---
+
+## 💻 Code Examples  
+
+### 1. Disabled Button  
+```html
+<!-- Copy Code 👇 -->
+<button type="button" class="btn btn-primary disabled" disabled>
+  Disabled Button
+</button>
+```
+
+```mermaid
+graph TD;
+    A[Button States] --> B[Active]
+    A --> C[Disabled]
+    B --> D[.active + aria-pressed=true]
+    C --> E[.disabled Class]
+    C --> F[disabled Attribute]
+```
+
+# 👥 Bootstrap Grouping Classes  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-Grouping_Utilities-purple)  
+
+In **Bootstrap**, **grouping classes** are used to combine multiple elements (like buttons, inputs, or form controls) into a **single grouped unit**.  
+They help in creating **organized layouts** where related items stay together and look consistent.  
+
+---
+
+## ✅ Key Types of Grouping Classes  
+
+### 1. **Button Groups (`.btn-group`)**  
+- Groups multiple buttons on a single line.  
+- Can be horizontal or vertical (`.btn-group-vertical`).  
+```html
+<!-- Copy Code 👇 -->
+<div class="btn-group" role="group">
+  <button type="button" class="btn btn-primary">Left</button>
+  <button type="button" class="btn btn-primary">Middle</button>
+  <button type="button" class="btn btn-primary">Right</button>
+</div>
+```
+
+```mermaid
+graph TD;
+    A[Bootstrap Grouping Classes] --> B[Button Group]
+    A --> C[Vertical Button Group]
+    A --> D[Input Group]
+```
+
+# 🔘 Button Group Size Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-Button_Group-purple)  
+
+In **Bootstrap**, button groups can be resized using **size modifier classes**.  
+These classes adjust the **height and padding** of all buttons inside a group, making them **larger or smaller**.  
+
+---
+
+## ✅ Available Button Group Size Classes  
+
+| Class             | Description |
+|-------------------|-------------|
+| `.btn-group-lg`   | Creates a **large** button group |
+| `.btn-group-sm`   | Creates a **small** button group |
+| `.btn-group`      | Default **medium** size (no extra class) |
+
+---
+
+## 💻 Code Examples  
+
+### 1. Large Button Group  
+```html
+<!-- Copy Code 👇 -->
+<div class="btn-group btn-group-lg" role="group">
+  <button type="button" class="btn btn-primary">Left</button>
+  <button type="button" class="btn btn-primary">Middle</button>
+  <button type="button" class="btn btn-primary">Right</button>
+</div>
+```
+### 1. Small Button Group  
+```html
+<!-- Copy Code 👇 -->
+<div class="btn-group btn-group-sm" role="group">
+  <button type="button" class="btn btn-success">Yes</button>
+  <button type="button" class="btn btn-danger">No</button>
+</div>
+```
+```mermaid
+graph TD;
+    A[Button Group Sizes] --> B[btn-group-lg]
+    A --> C[btn-group &#40;default&#41;]
+    A --> D[btn-group-sm]
+```
+
+# 🛠️ Button Group Toolbar Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-Button_Group-purple)  
+
+In **Bootstrap**, a **button toolbar** is used to group **multiple button groups** together on a single line.  
+It helps create **toolbars with multiple actions** without overlapping buttons.  
+
+---
+
+## ✅ Key Features  
+- Use `.btn-toolbar` as the container for button groups.  
+- Place **multiple `.btn-group`** inside the toolbar.  
+- Use `role="toolbar"` and `aria-label` for **accessibility**.  
+- Supports **sizes** like `.btn-group-lg` or `.btn-group-sm`.  
+
+---
+
+## 💻 Code Example  
+
+```html
+<!-- Copy Code 👇 -->
+<div class="btn-toolbar" role="toolbar" aria-label="Toolbar example">
+  <div class="btn-group me-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-primary">1</button>
+    <button type="button" class="btn btn-primary">2</button>
+    <button type="button" class="btn btn-primary">3</button>
+  </div>
+  <div class="btn-group me-2" role="group" aria-label="Second group">
+    <button type="button" class="btn btn-success">A</button>
+    <button type="button" class="btn btn-success">B</button>
+  </div>
+</div>
+```
+
+```mermaid
+graph TD;
+    A[btn-toolbar] --> B[btn-group 1]
+    A --> C[btn-group 2]
+    B --> D[Button 1]
+    B --> E[Button 2]
+    B --> F[Button 3]
+    C --> G[Button A]
+    C --> H[Button B]
+```
+
+# 🔽 Vertical Button Group Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-Button_Group-purple)  
+
+In **Bootstrap**, vertical button groups stack buttons **vertically** instead of horizontally.  
+This is useful for **sidebars, menus, or tool panels** where vertical alignment is needed.  
+
+---
+
+## ✅ Key Features  
+- Use `.btn-group-vertical` instead of `.btn-group`.  
+- Supports **all button sizes** (`.btn-lg`, `.btn-sm`).  
+- Can include **buttons, dropdowns, or mixed elements**.  
+- Works inside **toolbars** for complex layouts.  
+
+---
+
+## 💻 Code Example  
+
+```html
+<!-- Copy Code 👇 -->
+<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+  <button type="button" class="btn btn-primary">Top</button>
+  <button type="button" class="btn btn-primary">Middle</button>
+  <button type="button" class="btn btn-primary">Bottom</button>
+</div>
+```
+## LargeBtn Example  
+
+```html
+<div class="btn-group-vertical btn-group-lg" role="group">
+  <button type="button" class="btn btn-success">Large 1</button>
+  <button type="button" class="btn btn-success">Large 2</button>
+</div>
+```
+```mermaid
+graph TD;
+    A[btn-group-vertical] --> B[Button Top]
+    A --> C[Button Middle]
+    A --> D[Button Bottom]
+```
+
+# 🧩 Button Group Nesting Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-Button_Group-purple)  
+
+In **Bootstrap**, **nesting button groups** allows you to combine multiple button groups inside a **single parent group**.  
+This is useful for creating **complex toolbars, dropdowns, or multi-level actions**.  
+
+---
+
+## ✅ Key Features  
+- Use `.btn-group` inside another `.btn-group` to **nest buttons**.  
+- Can include **dropdowns** or **additional buttons**.  
+- Maintains **consistent spacing** with `.me-2` or `.ms-2`.  
+- Works with **vertical or horizontal button groups**.  
+
+---
+
+## 💻 Code Example  
+
+```html
+<!-- Copy Code 👇 -->
+<div class="btn-group" role="group" aria-label="Nested button group">
+  <button type="button" class="btn btn-primary">1</button>
+  <button type="button" class="btn btn-primary">2</button>
+
+  <div class="btn-group" role="group">
+    <button type="button" class="btn btn-primary">3</button>
+    <button type="button" class="btn btn-primary">4</button>
+  </div>
+</div>
+```
+
+```mermaid
+graph TD;
+    A[Outer btn-group] --> B[Button 1]
+    A --> C[Button 2]
+    A --> D[Inner btn-group]
+    D --> E[Button 3]
+    D --> F[Button 4]
+```
+
+# ☑️ Button Checkbox Grouping in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-Button_Group-green)  
+
+**Button checkbox grouping** in Bootstrap allows you to create a **group of buttons that behave like checkboxes**.  
+Users can **toggle multiple buttons on or off**, and the state is visually highlighted.  
+This is useful for **filters, options selection, or multi-choice controls**.  
+
+---
+
+## ✅ Key Features  
+- Buttons use `.btn` and `.active` classes to show selection.  
+- Wrap buttons inside `.btn-group` or `.btn-toolbar`.  
+- Each button uses `data-bs-toggle="button"` to enable **toggle behavior**.  
+- Multiple buttons can be selected simultaneously (checkbox behavior).  
+
+---
+
+## 💻 Code Example  
+
+```html
+<!-- Copy Code 👇 -->
+<div class="btn-group" role="group" aria-label="Checkbox button group">
+  <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btncheck1">Option 1</label>
+
+  <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btncheck2">Option 2</label>
+
+  <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btncheck3">Option 3</label>
+</div>
+```
+
+```mermaid
+graph TD;
+    A[Button Checkbox Group] --> B[Option 1]
+    A --> C[Option 2]
+    A --> D[Option 3]
+    B --> E[btn-check + label]
+    C --> F[btn-check + label]
+    D --> G[btn-check + label]
+```
+
+# 🔘 Button Radio Grouping in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-Button_Group-green)  
+
+**Button radio grouping** in Bootstrap allows you to create a **group of buttons that behave like radio buttons**.  
+Users can **select only one option at a time**, and the active button is visually highlighted.  
+This is ideal for **single-choice selections** like gender, payment methods, or filter options.  
+
+---
+
+## ✅ Key Features  
+- Buttons use `.btn` and `.active` classes to show selection.  
+- Wrap buttons inside `.btn-group` or `.btn-toolbar`.  
+- Each button uses `type="radio"` and the **same `name` attribute** for single-selection behavior.  
+- Only **one button** in the group can be active at a time.  
+
+---
+
+## 💻 Code Example  
+
+```html
+<!-- Copy Code 👇 -->
+<div class="btn-group" role="group" aria-label="Radio button group">
+  <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off" checked>
+  <label class="btn btn-outline-primary" for="option1">Option 1</label>
+
+  <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+  <label class="btn btn-outline-primary" for="option2">Option 2</label>
+
+  <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+  <label class="btn btn-outline-primary" for="option3">Option 3</label>
+</div>
+```
+
+```mermaid
+graph TD;
+    A[Button Radio Group] --> B[Option 1]
+    A --> C[Option 2]
+    A --> D[Option 3]
+    B --> E[btn-check + label]
+    C --> F[btn-check + label]
+    D --> G[btn-check + label]
+```
+# 🔽 Vertical Button Grouping in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-Button_Group-purple)  
+
+In **Bootstrap**, **vertical button grouping** allows you to stack buttons **vertically** instead of horizontally.  
+This layout is useful for **sidebars, menus, filters, or vertical tool panels**, especially when horizontal space is limited.  
+
+---
+
+## ✅ Key Features  
+- Use `.btn-group-vertical` to create a vertical stack of buttons.  
+- Works with **normal, outline, checkbox, and radio buttons**.  
+- Supports **all sizes** (`.btn-group-lg`, `.btn-group-sm`).  
+- Can be nested or included in **toolbars** for complex layouts.  
+
+---
+
+## 💻 Code Example  
+
+```html
+<!-- Copy Code 👇 -->
+<div class="btn-group-vertical" role="group" aria-label="Vertical button group">
+  <button type="button" class="btn btn-primary">Button 1</button>
+  <button type="button" class="btn btn-primary">Button 2</button>
+  <button type="button" class="btn btn-primary">Button 3</button>
+</div>
+```
+## 💻 Code Example  
+
+```html
+<div class="btn-group-vertical" role="group" aria-label="Vertical radio group">
+  <input type="radio" class="btn-check" name="options" id="voption1" autocomplete="off" checked>
+  <label class="btn btn-outline-success" for="voption1">Option 1</label>
+
+  <input type="radio" class="btn-check" name="options" id="voption2" autocomplete="off">
+  <label class="btn btn-outline-success" for="voption2">Option 2</label>
+</div>
+ ```
+
+```mermaid
+graph TD;
+    A[Vertical Button Group] --> B[Button 1]
+    A --> C[Button 2]
+    A --> D[Button 3]
+```
