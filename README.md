@@ -3220,3 +3220,234 @@ graph TD;
     A --> C[Button 2]
     A --> D[Button 3]
 ```
+
+# 📋 List Grouping in Bootstrap 5  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-UI_Components-green)  
+
+**List groups** in Bootstrap 5 are used to display **vertical lists of content** in a **flexible and styled way**.  
+They are commonly used for **menus, links, items, or groupings of text**.  
+
+---
+
+## ✅ Key Features  
+- Provides **consistent styling** for list items.  
+- Supports **active, disabled, and flush styles**.  
+- Can contain **links, buttons, or custom content**.  
+- Easy to customize with **borders, colors, and badges**.  
+
+---
+
+## 🔹 Basic List Group  
+
+```html
+<!-- Copy Code 👇 -->
+<ul class="list-group">
+  <li class="list-group-item">Item 1</li>
+  <li class="list-group-item">Item 2</li>
+  <li class="list-group-item">Item 3</li>
+</ul>
+```
+
+```mermaid
+graph TD;
+    A[List Group] --> B[Item 1]
+    A --> C[Item 2]
+    A --> D[Item 3]
+    B --> E[Active / Disabled / Link]
+    C --> E
+    D --> E
+```
+# ✅ Active List Item Grouping in Bootstrap 5  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-List_Group-green)  
+
+In **Bootstrap 5**, an **active list item** highlights a specific item in a list group to indicate **current selection or focus**.  
+It is commonly used for **menus, navigation, or multi-step processes** to show the user which item is active.  
+
+---
+
+## ✅ Key Features  
+- Add the `.active` class to a list item.  
+- Can be used on `<li>` or `<a>` elements inside a `.list-group`.  
+- Works with **links, buttons, or plain items**.  
+- Automatically gives a **highlighted background** and **text color**.  
+
+---
+
+## 💻 Code Example  
+
+### Active Item in Plain List  
+
+```html
+<!-- Copy Code 👇 -->
+<ul class="list-group">
+  <li class="list-group-item active">Active Item</li>
+  <li class="list-group-item">Item 2</li>
+  <li class="list-group-item">Item 3</li>
+</ul>
+```
+
+```mermaid
+graph TD;
+    A[List Group] --> B[Active Item]
+    A --> C[Item 2]
+    A --> D[Item 3]
+    B --> E[.active class applied]
+```
+
+# 🧼 Flush List Group in Bootstrap 5  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-List_Group-purple)  
+
+A **flush list group** in Bootstrap 5 removes the **borders, rounded corners, and spacing** from a standard list group.  
+It allows the list items to **align seamlessly with the parent container**, creating a clean, minimal look.  
+
+---
+
+## ✅ Key Features  
+- Use the `.list-group-flush` class on the `.list-group` container.  
+- Works with `<li>` or `<a>` elements inside the list group.  
+- Items **stretch edge-to-edge**, removing extra padding and borders.  
+- Commonly used in **cards or compact layouts**.  
+
+---
+
+## 💻 Code Example  
+
+```html
+<!-- Copy Code 👇 -->
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">Flush Item 1</li>
+  <li class="list-group-item">Flush Item 2</li>
+  <li class="list-group-item">Flush Item 3</li>
+</ul>
+```
+
+```mermaid
+graph TD;
+    A[Flush List Group] --> B[Flush Item 1]
+    A --> C[Flush Item 2]
+    A --> D[Flush Item 3]
+```
+
+# 🔢 Numbered List Grouping in Bootstrap 5  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-List_Group-green)  
+
+**Numbered list grouping** in Bootstrap 5 is used to display list items in a **sequential, ordered format**.  
+It combines the **`<ol>` HTML element** with Bootstrap's **list-group classes** for a styled and organized numbered list.  
+
+---
+
+## ✅ Key Features  
+- Uses `<ol>` instead of `<ul>` to create numbered items.  
+- Apply `.list-group` to the container and `.list-group-item` to each item.  
+- Supports **active and disabled states**.  
+- Can be used for **steps, tasks, rankings, or ordered instructions**.  
+
+---
+
+## 💻 Code Example  
+
+```html
+<!-- Copy Code 👇 -->
+<ol class="list-group list-group-numbered">
+  <li class="list-group-item">First item</li>
+  <li class="list-group-item">Second item</li>
+  <li class="list-group-item">Third item</li>
+</ol>
+```
+
+```mermaid
+graph TD;
+    A[Numbered List Group] --> B[1. First item]
+    A --> C[2. Second item]
+    A --> D[3. Third item]
+    B --> E[Active or Normal State]
+```
+
+# ↔️ Horizontal List Grouping in Bootstrap 5  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-List_Group-purple)  
+
+**Horizontal list grouping** in Bootstrap 5 allows list items to be displayed **side by side horizontally** instead of the default vertical stack.  
+It is useful for **navigation menus, tabs, or compact layouts** where horizontal space is preferred.  
+
+---
+
+## ✅ Key Features  
+- Use `.list-group-horizontal` on the `.list-group` container.  
+- Can be **responsive** using `.list-group-horizontal-sm`, `-md`, `-lg`, `-xl`, or `-xxl`.  
+- Works with `<ul>` or `<div>` elements.  
+- Supports **active, disabled, and flush styles**.  
+
+---
+
+## 💻 Code Example  
+
+### Basic Horizontal List  
+
+```html
+<!-- Copy Code 👇 -->
+<ul class="list-group list-group-horizontal">
+  <li class="list-group-item">Item 1</li>
+  <li class="list-group-item">Item 2</li>
+  <li class="list-group-item">Item 3</li>
+</ul>
+```
+
+```mermaid
+graph LR;
+    A[Horizontal List Group] --> B[Item 1]
+    A --> C[Item 2]
+    A --> D[Item 3]
+```
+
+# 🎨 Variants Grouping List in Bootstrap 5  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Category-List_Group-green)  
+
+**Variant list grouping** in Bootstrap 5 allows you to **apply different contextual colors** to individual list items.  
+This is useful for **highlighting status, priorities, categories, or alerts** in your lists.  
+
+---
+
+## ✅ Key Features  
+- Add **contextual classes** like `.list-group-item-primary`, `.list-group-item-success`, `.list-group-item-danger`, etc.  
+- Can be used with **active, disabled, flush, or horizontal lists**.  
+- Provides **visual feedback** for different item types or statuses.  
+
+---
+
+## 💻 Code Example  
+
+```html
+<!-- Copy Code 👇 -->
+<ul class="list-group">
+  <li class="list-group-item list-group-item-primary">Primary Item</li>
+  <li class="list-group-item list-group-item-success">Success Item</li>
+  <li class="list-group-item list-group-item-warning">Warning Item</li>
+  <li class="list-group-item list-group-item-danger">Danger Item</li>
+  <li class="list-group-item list-group-item-info">Info Item</li>
+  <li class="list-group-item list-group-item-light">Light Item</li>
+  <li class="list-group-item list-group-item-dark">Dark Item</li>
+</ul>
+```
+
+```mermaid
+graph TD;
+    A[Variant List Group] --> B[Primary Item]
+    A --> C[Success Item]
+    A --> D[Warning Item]
+    A --> E[Danger Item]
+    A --> F[Info Item]
+    A --> G[Light Item]
+    A --> H[Dark Item]
+```
