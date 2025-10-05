@@ -3451,3 +3451,685 @@ graph TD;
     A --> G[Light Item]
     A --> H[Dark Item]
 ```
+
+# 📋 What is Table in Bootstrap?  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Component-Table-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+In **Bootstrap 5**, a **table** is a built-in component used to display data in a structured **row and column format**.  
+It provides **predefined classes** for styling, spacing, and responsiveness without writing custom CSS.  
+
+---
+
+## ✅ Key Features
+- 🧩 Ready-to-use table styles  
+- 🎨 Alternating row colors using `.table-striped`  
+- 🕶️ Hover effect with `.table-hover`  
+- 📱 Responsive layout with `.table-responsive`  
+- 🌈 Dark and light theme support  
+
+---
+
+## 💻 Code Example  
+
+```html
+<!-- Copy Code 👇 -->
+<div class="table-responsive">
+  <table class="table table-striped table-hover table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Preetam</td>
+        <td>preetam@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```
+
+```mermaid
+graph TD
+    A[Bootstrap Table] --> B[table-striped 🎨]
+    A --> C[table-hover 🖱️]
+    A --> D[table-bordered 📏]
+    A --> E[table-responsive 📱]
+```
+
+# 🖱️ What is Table Hoverable Row Classes in Bootstrap?  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Feature-Table%20Hover-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+In **Bootstrap 5**, the **hoverable row class** is used to highlight a table row when the mouse pointer moves over it.  
+This effect is applied using the class **`.table-hover`**. It improves user interaction and readability, especially in data tables.
+
+---
+
+## ✅ Key Features
+- 🖱️ Highlights rows on mouse hover  
+- 🎨 Works with striped, bordered, or dark tables  
+- 📱 Fully responsive and mobile-friendly  
+- 🔧 Easy to apply — just one class  
+
+---
+
+## 💻 Example Code  
+
+```html
+<!-- Copy Code 👇 -->
+<table class="table table-hover">
+  <thead class="table-dark">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Role</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Preetam</td>
+      <td>Developer</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Shubhangi</td>
+      <td>Designer</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+```mermaid
+graph TD
+    A[Bootstrap Table] --> B[.table 🎯 Base Table]
+    A --> C[.table-hover 🖱️ Hover Effect]
+    C --> D[User Hovers Over Row 💡]
+    D --> E[Row Background Changes ✨]
+```
+
+# 🌟 What is Table Active Classes in Bootstrap?  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Feature-Active%20Table%20Row-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+In **Bootstrap 5**, the **`.table-active`** class is used to **highlight a specific table row or cell** to show that it is **selected or active**.  
+It gives a light gray background (or darker shade in dark mode) to make the active row stand out from others.
+
+---
+
+## ✅ Key Features
+- 🌟 Highlights a selected or active row/cell  
+- 🎨 Works with `.table`, `.table-hover`, `.table-striped`  
+- 🕶️ Supports both light and dark themes  
+- 🧩 Simple and easy to apply  
+
+---
+
+## 💻 Example Code  
+
+```html
+<!-- Copy Code 👇 -->
+<table class="table table-hover table-striped">
+  <thead class="table-dark">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-active">
+      <td>1</td>
+      <td>Preetam</td>
+      <td>Active</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Shubhangi</td>
+      <td>Inactive</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+```mermaid
+graph TD
+    A[Bootstrap Table] --> B[.table 🎯 Base Class]
+    A --> C[.table-hover 🖱️ Hover Rows]
+    A --> D[.table-active 🌟 Active Row]
+    D --> E[Visually Highlighted Row ✨]
+```
+
+# 📏 Table Border Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Feature-Table%20Borders-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+In **Bootstrap 5**, **table border classes** are used to **add or remove borders** around the table and its cells.  
+They help make tables more organized, improving the visibility of rows and columns.
+
+---
+
+## ✅ Key Features
+- 📏 Adds or removes borders for better table layout  
+- 🎨 Works with all table types (striped, hover, dark)  
+- ⚙️ Easy customization using simple classes  
+- 📱 Fully responsive and mobile-friendly  
+
+---
+
+## 💻 Example Code  
+
+```html
+<!-- Copy Code 👇 -->
+<h5>Bordered Table</h5>
+<table class="table table-bordered">
+  <thead class="table-dark">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Preetam</td>
+      <td>Jaipur</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5>Borderless Table</h5>
+<table class="table table-borderless">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>Shubhangi</td>
+      <td>Pune</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+```mermaid
+graph TD
+    A[Bootstrap Table] --> B[.table-bordered 📏 Adds Borders]
+    A --> C[.table-borderless 🚫 Removes Borders]
+    B --> D[Clear Data Separation ✨]
+    C --> E[Simple & Clean Design 🧩]
+```
+
+# 🚫 Table Without Border in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Feature-Borderless%20Table-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+In **Bootstrap 5**, a **table without borders** is created using the class **`.table-borderless`**.  
+This class removes all the borders from the table cells, giving it a **clean and minimal design**.  
+It’s often used when borders are not needed, such as in reports or layout tables.
+
+---
+
+## ✅ Key Features
+- 🚫 Removes borders from all table cells  
+- 🎨 Creates a modern and minimal layout  
+- 💻 Works with other classes like `.table-hover` and `.table-striped`  
+- 📱 Fully responsive and easy to use  
+
+---
+
+## 💻 Example Code  
+
+```html
+<!-- Copy Code 👇 -->
+<table class="table table-borderless">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Preetam</td>
+      <td>Jaipur</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Shubhangi</td>
+      <td>Pune</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+```mermaid
+graph TD
+    A[Bootstrap Table] --> B[.table 🎯 Base Table]
+    A --> C[.table-borderless 🚫 No Borders]
+    C --> D[Minimal & Clean Look ✨]
+```
+
+# 📘 Small Table Classes in Bootstrap
+
+**Definition:**  
+Bootstrap provides a class to make tables smaller and more compact by reducing the padding inside table cells. It helps display large data in a limited space clearly.
+
+---
+
+## ✅ Class
+| Class Name | Description |
+|-------------|--------------|
+| `.table-sm` | Makes the table compact by reducing cell padding. |
+
+---
+
+## 💻 Example
+```html
+<table class="table table-sm">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Preetam</td>
+      <td>Jaipur</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+```mermaid
+graph TD
+    A[Bootstrap Table] --> B[.table 🎯 Base Table]
+    A --> C[.table-sm 📏 Small Table]
+    C --> D[Reduced Padding ✂️]
+    D --> E[Compact & Neat Look ✨]
+```
+
+
+# 🏷️ Table Head Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Feature-Table%20Head-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+In **Bootstrap 5**, the **`.table-dark`** or **`.table-light`** classes can be used to style the table header (`<thead>`).  
+This allows you to make table headers **stand out** with different background colors for better readability.
+
+---
+
+## ✅ Key Features
+- 🎨 Highlights table headers  
+- 🌈 Provides light or dark header themes  
+- 📱 Works with all table types (striped, hover, bordered)  
+- ⚡ Easy to apply using `.table-dark` or `.table-light`  
+
+---
+
+## 💻 Example Code  
+
+```html
+<table class="table">
+  <thead class="table-dark">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Preetam</td>
+      <td>Jaipur</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Shubhangi</td>
+      <td>Pune</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+```mermaid
+graph TD
+    A[Bootstrap Table] --> B[.table 🎯 Base Table]
+    A --> C[<thead> Table Header 📌]
+    C --> D[.table-dark 🌑 Dark Header]
+    C --> E[.table-light 🌕 Light Header]
+    D --> F[Header Highlighted ✨]
+    E --> F
+```
+
+# 🏁 Table Foot Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Feature-Table%20Footer-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+In **Bootstrap 5**, the `<tfoot>` element is used to define a **table footer**.  
+You can style it using **`.table-dark`** or **`.table-light`** classes to make footer rows **stand out** or match the table design.
+
+---
+
+## ✅ Key Features
+- 🎨 Highlights table footer  
+- 🌈 Supports light and dark footer themes  
+- 🧩 Works with striped, hover, and bordered tables  
+- 📱 Fully responsive and easy to implement  
+
+---
+
+## 💻 Example Code  
+
+```html
+<table class="table">
+  <thead class="table-dark">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Preetam</td>
+      <td>Jaipur</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Shubhangi</td>
+      <td>Pune</td>
+    </tr>
+  </tbody>
+  <tfoot class="table-light">
+    <tr>
+      <td colspan="3">Total Users: 2</td>
+    </tr>
+  </tfoot>
+</table>
+```
+
+```mermaid
+graph TD
+    A[Bootstrap Table] --> B[.table 🎯 Base Table]
+    A --> C[<tfoot> Table Footer 📌]
+    C --> D[.table-dark 🌑 Dark Footer]
+    C --> E[.table-light 🌕 Light Footer]
+    D --> F[Footer Highlighted ✨]
+    E --> F
+```
+
+# 🏷️ Table Caption Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Feature-Table%20Caption-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+In **Bootstrap 5**, the `<caption>` element is used to provide a **title or description** for a table.  
+You can style captions using **`.caption-top`** or **`.caption-bottom`** classes to place the caption **above or below** the table.
+
+---
+
+## ✅ Key Features
+- 📌 Adds a descriptive title to the table  
+- ⬆️ `.caption-top` places the caption at the top  
+- ⬇️ `.caption-bottom` places the caption at the bottom (default)  
+- 🎨 Improves table clarity and accessibility  
+
+---
+
+## 💻 Example Code  
+
+```html
+<table class="table">
+  <caption class="caption-top">User Details Table</caption>
+  <thead class="table-dark">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>City</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Preetam</td>
+      <td>Jaipur</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Shubhangi</td>
+      <td>Pune</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+```mermaid
+graph TD
+    A[Bootstrap Table] --> B[.table 🎯 Base Table]
+    A --> C[<caption> Table Caption 📌]
+    C --> D[.caption-top ⬆️ Top Caption]
+    C --> E[.caption-bottom ⬇️ Bottom Caption]
+    D --> F[Descriptive & Clear ✨]
+    E --> F
+```
+
+# 📱 Responsive Table Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Feature-Responsive%20Table-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+In **Bootstrap 5**, **responsive tables** allow tables to **scroll horizontally** on small devices to prevent layout overflow.  
+This is achieved using the `.table-responsive` class.
+
+---
+
+## ✅ Key Features
+- 📏 Makes tables scrollable on small screens  
+- 🖱️ Works with all table types (striped, hover, bordered)  
+- ⚡ Ensures **better readability** on mobile devices  
+- 🎨 Supports all table styles and themes  
+
+---
+
+## 💻 Example Code  
+
+```html
+<div class="table-responsive">
+  <table class="table table-striped table-hover table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+        <th>Country</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Preetam</td>
+        <td>preetam@example.com</td>
+        <td>Jaipur</td>
+        <td>India</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Shubhangi</td>
+        <td>shubhangi@example.com</td>
+        <td>Pune</td>
+        <td>India</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```
+
+```mermaid
+graph TD
+    A[Bootstrap Table] --> B[.table 🎯 Base Table]
+    A --> C[.table-responsive 📱 Scrollable Table]
+    C --> D[Mobile Devices 📱]
+    D --> E[Horizontal Scroll Added ↔️]
+    E --> F[Better Readability ✨]
+```
+
+# 🏗️ Nesting Table Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Feature-Nested%20Tables-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+In **Bootstrap 5**, **nested tables** are tables placed **inside another table’s cell**.  
+This allows complex data representation like sub-tables for details or grouped data.
+
+---
+
+## ✅ Key Features
+- 🧩 Organizes complex or hierarchical data  
+- 📏 Works with all table styles (striped, bordered, hover)  
+- ⚡ Supports responsive layout with `.table-responsive`  
+- 🎨 Nested tables inherit parent table styling  
+
+---
+
+## 💻 Example Code  
+
+```html
+<table class="table table-bordered">
+  <thead class="table-dark">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Preetam</td>
+      <td>
+        <table class="table table-sm table-striped">
+          <tr>
+            <td>Email</td>
+            <td>preetam@example.com</td>
+          </tr>
+          <tr>
+            <td>City</td>
+            <td>Jaipur</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+```
+
+```mermaid
+graph TD
+    A[Parent Table 📋] --> B[Nested Table 🧩]
+    B --> C[Compact Rows ✂️]
+    C --> D[Organized & Readable Data ✨]
+```
+
+# 🎨 Table Variants in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Feature-Table%20Variants-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+In **Bootstrap 5**, table variants are used to **change the background color** of table rows or the entire table.  
+Variants improve readability and highlight important data.
+
+---
+
+## ✅ Common Table Variant Classes
+
+| Class | Description |
+|-------|-------------|
+| `.table-primary` | Blue background for row or cell |
+| `.table-secondary` | Grey background |
+| `.table-success` | Green background |
+| `.table-danger` | Red background |
+| `.table-warning` | Yellow background |
+| `.table-info` | Light blue background |
+| `.table-light` | Light background |
+| `.table-dark` | Dark background |
+
+---
+
+## 💻 Example Code  
+
+```html
+<table class="table">
+  <thead class="table-dark">
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-primary">
+      <td>1</td>
+      <td>Preetam</td>
+      <td>Active</td>
+    </tr>
+    <tr class="table-success">
+      <td>2</td>
+      <td>Shubhangi</td>
+      <td>Completed</td>
+    </tr>
+    <tr class="table-danger">
+      <td>3</td>
+      <td>Ravi</td>
+      <td>Pending</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+```mermaid
+graph TD
+    A[Bootstrap Table] --> B[Table Rows 📋]
+    B --> C[.table-primary 🔵 Blue Row]
+    B --> D[.table-success 🟢 Green Row]
+    B --> E[.table-danger 🔴 Red Row]
+    C --> F[Highlights Active Status ✨]
+    D --> F
+    E --> F
+```
