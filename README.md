@@ -4133,3 +4133,252 @@ graph TD
     D --> F
     E --> F
 ```
+
+# 🔢 What is Pagination in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Feature-Pagination-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+**Pagination** is a component in Bootstrap used to **divide large content into smaller, navigable pages**.  
+It improves **user experience** by allowing users to jump between pages easily instead of scrolling through long content.
+
+---
+
+## ✅ Key Features
+- 📄 Splits content into multiple pages  
+- ⬅️➡️ Provides navigation links (Previous, Next)  
+- ⚡ Supports custom sizes (`.pagination-sm`, `.pagination-lg`)  
+- 🎨 Works with all Bootstrap themes and styles  
+
+---
+
+## 💻 Example Code  
+
+```html
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+```
+
+```mermaid
+graph TD
+    A[Pagination Component 🔢] --> B[.pagination 📋 Base]
+    B --> C[.page-item 📌 Page Item]
+    C --> D[.page-link 🔗 Page Link]
+    B --> E[.pagination-sm 📏 Small Pagination]
+    B --> F[.pagination-lg 📏 Large Pagination]
+```
+
+# 🔹 Pagination Display & Active Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Feature-Pagination-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+In **Bootstrap 5**, **pagination display classes** manage the **layout and visibility** of pagination, and **active classes** highlight the **current page**.  
+These classes help users know which page they are on and navigate easily.
+
+---
+
+## ✅ Key Classes
+
+| Class | Description |
+|-------|-------------|
+| `.pagination` | Base class for pagination container |
+| `.page-item` | Wrapper for each page link |
+| `.page-link` | Styles individual links/buttons |
+| `.active` | Marks the current active page |
+| `.disabled` | Disables a page link (cannot be clicked) |
+
+---
+
+## 💻 Example Code  
+
+```html
+<nav aria-label="Page navigation example">
+  <ul class="pagination">
+    <li class="page-item disabled">
+      <a class="page-link" href="#">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item active">
+      <a class="page-link" href="#">2</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+```
+
+```mermaid
+graph TD
+    A[Pagination Component 🔢] --> B[.pagination 📋 Base]
+    B --> C[.page-item 📌 Page Item]
+    C --> D[.page-link 🔗 Page Link]
+    D --> E[.active ✅ Current Page Highlighted]
+    D --> F[.disabled 🚫 Disabled Page Link]
+```
+
+# 📏 Pagination Size Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Feature-Pagination-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+In **Bootstrap 5**, **pagination size classes** allow you to **adjust the size of pagination links**.  
+You can create **smaller or larger pagination** to fit different UI layouts.
+
+---
+
+## ✅ Key Size Classes
+
+| Class | Description |
+|-------|-------------|
+| `.pagination-sm` | Makes pagination smaller (compact) |
+| `.pagination-lg` | Makes pagination larger (bigger links) |
+| `.pagination` | Default size |
+
+---
+
+## 💻 Example Code  
+
+```html
+<!-- Small Pagination -->
+<ul class="pagination pagination-sm">
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+</ul>
+
+<!-- Default Pagination -->
+<ul class="pagination">
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+</ul>
+
+<!-- Large Pagination -->
+<ul class="pagination pagination-lg">
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+</ul>
+```
+
+```mermaid
+graph TD
+    A[Pagination Component 🔢] --> B[.pagination 📋 Default Size]
+    A --> C[.pagination-sm 📏 Small Size]
+    A --> D[.pagination-lg 🔍 Large Size]
+    C --> E[Compact Layout ✨]
+    D --> F[Bigger Links for Visibility 🖱️]
+```
+
+# 🎯 Pagination Alignment Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Feature-Pagination-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+In **Bootstrap 5**, **pagination alignment classes** help you **position pagination** in a container.  
+You can align it **left, center, or right** using **flexbox utility classes**.
+
+---
+
+## ✅ Key Alignment Classes
+
+| Class | Description |
+|-------|-------------|
+| `.justify-content-start` | Align pagination to the **left** |
+| `.justify-content-center` | Align pagination to the **center** |
+| `.justify-content-end` | Align pagination to the **right** |
+| `.d-flex` | Required to enable flexbox layout |
+
+---
+
+## 💻 Example Code  
+
+```html
+<!-- Left-aligned Pagination -->
+<ul class="pagination d-flex justify-content-start">
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+</ul>
+
+<!-- Center-aligned Pagination -->
+<ul class="pagination d-flex justify-content-center">
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+</ul>
+
+<!-- Right-aligned Pagination -->
+<ul class="pagination d-flex justify-content-end">
+  <li class="page-item"><a class="page-link" href="#">1</a></li>
+  <li class="page-item active"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+</ul>
+```
+
+```mermaid
+graph TD
+    A[Pagination Component 🔢] --> B[.d-flex 💪 Flexbox Enabled]
+    B --> C[.justify-content-start ⬅️ Left]
+    B --> D[.justify-content-center ⬆️ Center]
+    B --> E[.justify-content-end ➡️ Right]
+    C --> F[Left-aligned Pagination]
+    D --> G[Center-aligned Pagination]
+    E --> H[Right-aligned Pagination]
+```
+
+# 🥖 Breadcrumbs Classes in Bootstrap  
+
+![Badge](https://img.shields.io/badge/Topic-Bootstrap-blue)  
+![Badge](https://img.shields.io/badge/Feature-Breadcrumbs-lightgrey)  
+![Badge](https://img.shields.io/badge/Version-Bootstrap%205-important)  
+
+**Breadcrumbs** are a **navigation component** in Bootstrap used to show the **current page's location** within a website hierarchy.  
+Bootstrap provides classes to style, size, and align breadcrumbs easily.
+
+---
+
+## ✅ Key Breadcrumb Classes
+
+| Class | Description |
+|-------|-------------|
+| `.breadcrumb` | Base class for the breadcrumb container |
+| `.breadcrumb-item` | Styles each item in the breadcrumb |
+| `.active` | Marks the current page (last item) |
+| `.breadcrumb-lg` | Large-sized breadcrumb (optional styling) |
+| `.breadcrumb-sm` | Small-sized breadcrumb (optional styling) |
+
+---
+
+## 💻 Example Code  
+
+```html
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Library</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Data</li>
+  </ol>
+</nav>
+```
+
+```mermaid
+graph TD
+    A[Bootstrap Breadcrumbs 🥖] --> B[.breadcrumb 📋 Base Container]
+    B --> C[.breadcrumb-item 📌 Breadcrumb Item]
+    C --> D[.active ✅ Current Page Highlight]
+```
